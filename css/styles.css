@@ -24,6 +24,24 @@ a {
   background-color: var(--secondarybg);
 }
 
+/* .home .search-icon{
+  margin-top: -28px;
+}
+
+.home .search-icon input{
+  margin-left: 1200px;
+  margin-top: -20px;
+}
+
+.search-icon img{
+  margin-left: 20px;
+} */
+
+.home img{
+    width: 20px;
+    margin-top: 40px;
+}
+
 .main .home nav {
   height: 30px;
   display: flex;
