@@ -31,7 +31,7 @@ form button {
   background-color: rgb(0, 0, 0);
 }
 
-input[type="search"]::placeholder{
+input[type="search"]::placeholder {
   color: #ddd5d5;
 }
 
@@ -59,22 +59,93 @@ input[type="search"]:focus {
   outline: none;
 }
 
-.background-img img{
-    width: 60px;
-    display: flex;
-    margin-top: -47px;
-    margin-left: 1420px;
+.background-img img {
+  width: 60px;
+  display: flex;
+  margin-top: -47px;
+  margin-left: 1420px;
 }
 
-.background-img h1{
-    color: #9e9a9a;
-    margin-top: 70px;
+.background-img h1 {
+  color: #9e9a9a;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.background-img p {
+  font-size: 27px;
+  color: #f9e5e5;
+  text-align: center;
+  margin: 50px 240px 10px 240px;
+}
+
+.chicken{
+    height: 690px;
+    margin-top: 30px;
+}
+
+.chicken .left img{
+    width: 560px;
+    height: 480px;
+    margin-top: 90px;
+    margin-left: 70px;
+    border-radius: 22px;
+}
+
+.chicken .right{
+    margin-left: 680px;
+    margin-top: -470px;
+}
+
+.chicken .right h2{
     text-align: center;
 }
 
-.background-img p{
-    font-size: 27px;
-    color: #f9e5e5;
+.chicken .right p{
+    color: #545353;
+    font-size: 21px;
     text-align: center;
-    margin: 50px 240px 10px 240px;
+    margin:  30px 120px 100px 60px;
+}
+
+.chicken .right h6{
+    font-size: 20px;
+    color: #7ac068;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+
+.chicken .right .right_buttons{
+    margin-top: 40px;
+    margin-left: 160px;
+}
+
+.right_buttons button{
+    border: none;
+    width: 220px;
+    height: 50px;
+    border-radius: 22px;
+}
+
+.right_buttons button:nth-of-type(1){
+    font-size: 15px;
+    color: #ddd5d5;
+    background-color: #4973dd;
+}
+
+.right_buttons button:nth-of-type(1):hover{
+    color: rgb(243, 236, 236);
+    background-color: #475a8c;
+}
+
+.right_buttons button:nth-of-type(2){
+    font-size: 15px;
+    color: #ddd5d5;
+    margin-left: 60px;
+    background-color: #6f5555;
+}
+
+.right_buttons button:nth-of-type(2):hover{
+    color: rgb(243, 236, 236);
+    background-color: #7a5d5d;
 }
