@@ -85,7 +85,7 @@ input[type="search"]:focus {
 
 .chicken{
     height: 690px;
-    margin-top: 30px;
+    background-color: #d0cfcf;
 }
 
 .chicken .left img{
