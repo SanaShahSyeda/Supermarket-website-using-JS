@@ -4,6 +4,10 @@
 }
 
 :root {
+  --basic1:#4973dd ;
+  --basic2:#b37070 ;
+  --basic1hover: #5887fd;
+  --basic2hover:#9f9696 ;
 }
 
 .background-img {
@@ -88,7 +92,7 @@ input[type="search"]:focus {
     width: 560px;
     height: 480px;
     margin-top: 90px;
-    margin-left: 70px;
+    margin-left: 100px;
     border-radius: 22px;
 }
 
@@ -97,15 +101,15 @@ input[type="search"]:focus {
     margin-top: -470px;
 }
 
-.chicken .right h2{
+.chicken .right h1{
     text-align: center;
 }
 
 .chicken .right p{
     color: #545353;
     font-size: 21px;
-    text-align: center;
-    margin:  30px 120px 100px 60px;
+    justify-content:center;
+    margin:  30px 110px 100px 60px;
 }
 
 .chicken .right h6{
@@ -127,25 +131,28 @@ input[type="search"]:focus {
     border-radius: 22px;
 }
 
-.right_buttons button:nth-of-type(1){
+.btn1{
     font-size: 15px;
-    color: #ddd5d5;
-    background-color: #4973dd;
+    color: white;
+    background-color:var(--basic1) ;
 }
 
-.right_buttons button:nth-of-type(1):hover{
-    color: rgb(243, 236, 236);
-    background-color: #475a8c;
+.btn1:hover{
+    color: black;
+    background-color: var(--basic1hover);
 }
 
 .right_buttons button:nth-of-type(2){
-    font-size: 15px;
-    color: #ddd5d5;
-    margin-left: 60px;
-    background-color: #6f5555;
+    margin-left: 40px;
 }
 
-.right_buttons button:nth-of-type(2):hover{
-    color: rgb(243, 236, 236);
-    background-color: #8b7373;
+.btn2{
+  font-size: 15px;
+  color: white;
+  background-color: var(--basic2);
+} 
+
+.btn2:hover{
+    color: black;
+    background-color: var(--basic2hover);
 }
