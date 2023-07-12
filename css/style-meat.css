@@ -59,6 +59,13 @@ input[type="search"]:focus {
   outline: none;
 }
 
+.background-img img{
+    width: 60px;
+    display: flex;
+    margin-top: -47px;
+    margin-left: 1420px;
+}
+
 .background-img h1{
     color: #9e9a9a;
     margin-top: 70px;
