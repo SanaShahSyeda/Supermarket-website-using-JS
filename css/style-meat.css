@@ -7,7 +7,7 @@
 }
 
 .background-img {
-  opacity: 0.7;
+  opacity: 0.8;
   min-height: 712px;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@ input[type="search"] {
   height: 32px;
   font-size: 14px;
   margin-top: 30px;
-  margin-left: 450px;
+  margin-left: 480px;
   color: aliceblue;
   border-radius: 20px;
 }
@@ -54,7 +54,20 @@ button[type="submit"]:hover {
 
 button[type="submit"]:focus,
 input[type="search"]:focus {
-  box-shadow: 0 0 3px 0 #1183d6;
-  border-color: #1183d6;
+  box-shadow: 0 0 3px 0 #643737;
+  border-color: #643737;
   outline: none;
+}
+
+.background-img h1{
+    color: #9e9a9a;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.background-img p{
+    font-size: 27px;
+    color: #f9e5e5;
+    text-align: center;
+    margin: 50px 240px 10px 240px;
 }
