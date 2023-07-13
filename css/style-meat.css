@@ -4,10 +4,17 @@
 }
 
 :root {
-  --basic1:#4973dd ;
-  --basic2:#b37070 ;
+  --basic1: #4973dd;
+  --basic2: #b37070;
   --basic1hover: #5887fd;
-  --basic2hover:#9f9696 ;
+  --basic2hover: #9f9696;
+  --primarybg: #e6dfdf;
+}
+
+.chicken,
+.mutton {
+  height: 710px;
+  background-color: var(--primarybg);
 }
 
 .background-img {
@@ -63,27 +70,26 @@ input[type="search"]:focus {
   outline: none;
 }
 
-.background-img img{
+.background-img img {
   width: 60px;
   margin-top: -60px;
   display: inline-block;
 }
 
-.background-img img:hover{
+.background-img img:hover {
   background-color: #969090;
 }
 
-.background-img .help img{
+.background-img .help img {
   width: 38px;
   height: 50px;
   margin-left: 1330px;
 }
 
-.background-img .cart img{
+.background-img .cart img {
   margin-left: 20px;
   margin-top: -45px;
 }
-
 
 .background-img h1 {
   color: #9e9a9a;
@@ -99,97 +105,139 @@ input[type="search"]:focus {
 }
 
 .chicken{
-    height: 690px;
-    background-color: #d0cfcf;
+  margin-bottom: 30px;
+}
+
+.chicken .left img,
+.beef .beef_right img,
+.mutton .left img {
+  width: 560px;
+  height: 480px;
+  border-radius: 22px;
 }
 
 .chicken .left img{
-    width: 560px;
-    height: 480px;
-    margin-top: 90px;
-    margin-left: 100px;
-    border-radius: 22px;
+  margin-top: 90px;
+  margin-left: 100px;
 }
 
 .chicken .right{
-    margin-left: 680px;
-    margin-top: -470px;
+  margin-left: 680px;
+  margin-top: -470px;
 }
 
-.chicken .right h1{
-    text-align: center;
+.chicken .right h1,
+.beef .beef_left h1,
+.mutton .right h1 {
+  text-align: center;
 }
 
-.chicken .right p{
-    color: #545353;
-    font-size: 21px;
-    justify-content:center;
-    margin:  30px 110px 100px 60px;
+.chicken .right p,
+.beef .beef_left p,
+.mutton .right p {
+  color: #545353;
+  font-size: 21px;
+  justify-content: center;
 }
 
-.chicken .right h6{
-    font-size: 20px;
-    color: #7ac068;
-    margin-top: -60px;
-    margin-left: 70px;
+.chicken .right p {
+  margin: 30px 110px 100px 60px;
 }
 
+.chicken .right h6,
+.beef .beef_left h6,
+.mutton .right h6 {
+  font-size: 20px;
+  color: #7ac068;
+}
 
-.chicken .right a img{
+.chicken .right h6 {
+  margin-top: -60px;
+  margin-left: 70px;
+}
+
+.chicken .right a img,
+.beef .beef_left a img,
+.mutton .right a img {
   width: 30px;
   height: 38px;
   display: flex;
   border: 1px solid #ababab;
 }
 
-.right a img:hover{
-   background-color: #a9a5a5;
+.chicken .right a img:hover {
+  background-color: #a9a5a5;
 }
 
-.minus img{
+.minus img {
   margin-left: 260px;
   margin-top: -22px;
 }
 
-.plus img{
+.plus img {
   margin-left: 350px;
   margin-top: -41px;
 }
 
-.chicken .right .right_buttons{
-    margin-top: 40px;
-    margin-left: 160px;
+.chicken .right .right_buttons {
+  margin-top: 40px;
+  margin-left: 160px;
 }
 
-.right_buttons button{
-    border: none;
-    width: 220px;
-    height: 50px;
-    border-radius: 22px;
+.right_buttons button, .left_buttons button{
+  border: none;
+  width: 220px;
+  height: 50px;
+  border-radius: 22px;
 }
 
-.btn1{
-    font-size: 15px;
-    color: white;
-    background-color:var(--basic1) ;
+.btn1 {
+  font-size: 15px;
+  color: white;
+  background-color: var(--basic1);
 }
 
-.btn1:hover{
-    color: black;
-    background-color: var(--basic1hover);
+.btn1:hover {
+  color: black;
+  background-color: var(--basic1hover);
 }
 
-.right_buttons button:nth-of-type(2){
-    margin-left: 40px;
+.right_buttons button:nth-of-type(2) {
+  margin-left: 40px;
 }
 
-.btn2{
+.btn2 {
   font-size: 15px;
   color: white;
   background-color: var(--basic2);
-} 
+}
 
-.btn2:hover{
-    color: black;
-    background-color: var(--basic2hover);
+.btn2:hover {
+  color: black;
+  background-color: var(--basic2hover);
+}
+
+.beef .beef_left h1{
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.beef .beef_left p{
+   margin: 20px 50px 10px 100px;
+}
+
+.beef .beef_left h6{
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.beef .beef_left, .beef .beef_right{
+  width: 710px;
+  height: 580px;
+}
+
+.beef .beef_right img{
+  display: flex;
+  margin-left: 840px;
+  margin-top: -560px;
 }
