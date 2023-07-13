@@ -119,6 +119,28 @@ input[type="search"]:focus {
     margin-left: 70px;
 }
 
+
+.chicken .right a img{
+  width: 30px;
+  height: 38px;
+  display: flex;
+  border: 1px solid #ababab;
+}
+
+.right a img:hover{
+   background-color: #a9a5a5;
+}
+
+.minus img{
+  margin-left: 260px;
+  margin-top: -22px;
+}
+
+.plus img{
+  margin-left: 350px;
+  margin-top: -41px;
+}
+
 .chicken .right .right_buttons{
     margin-top: 40px;
     margin-left: 160px;
