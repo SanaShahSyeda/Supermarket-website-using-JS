@@ -83,7 +83,7 @@ input[type="search"]:focus {
 }
 
 .background-img img:hover {
-  background-color: #969090;
+  background-color: #985151;
 }
 
 .background-img .help img {
@@ -251,6 +251,9 @@ input[type="search"]:focus {
   height: 540px;
 }
 
+.beef_left h1{
+  margin-top: -10px;
+}
 
 .beef_left p {
   margin: 20px 20px 10px 120px;
@@ -287,4 +290,13 @@ input[type="search"]:focus {
   display: flex;
   margin-left: 860px;
   margin-top: -500px;
+}
+
+.contact-us{
+  opacity: 0.7;
+  min-height: 712px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/Images/meat-bg.png");
 }
