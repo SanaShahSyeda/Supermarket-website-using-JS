@@ -2,6 +2,10 @@ var beef_q=0;
 var chicken_q=0;
 var mutton_q=0;
 
+
+var abc = document.querySelector("input").value;
+console.log(abc);
+
 function add_quantity(){
   
 }
