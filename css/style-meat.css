@@ -12,8 +12,9 @@
 }
 
 .chicken,
+.beef,
 .mutton {
-  height: 710px;
+  height: 700px;
   background-color: var(--primarybg);
 }
 
@@ -104,10 +105,6 @@ input[type="search"]:focus {
   margin: 50px 240px 10px 240px;
 }
 
-.chicken{
-  margin-bottom: 30px;
-}
-
 .chicken .left img,
 .beef .beef_right img,
 .mutton .left img {
@@ -116,12 +113,14 @@ input[type="search"]:focus {
   border-radius: 22px;
 }
 
-.chicken .left img{
+.chicken .left img,
+.mutton .left img {
   margin-top: 90px;
   margin-left: 100px;
 }
 
-.chicken .right{
+.chicken .right,
+.mutton .right {
   margin-left: 680px;
   margin-top: -470px;
 }
@@ -137,10 +136,11 @@ input[type="search"]:focus {
 .mutton .right p {
   color: #545353;
   font-size: 21px;
-  justify-content: center;
+  text-align: justify;
 }
 
-.chicken .right p {
+.chicken .right p,
+.mutton .right p {
   margin: 30px 110px 100px 60px;
 }
 
@@ -151,7 +151,8 @@ input[type="search"]:focus {
   color: #7ac068;
 }
 
-.chicken .right h6 {
+.chicken .right h6,
+.mutton .right h6 {
   margin-top: -60px;
   margin-left: 70px;
 }
@@ -165,7 +166,8 @@ input[type="search"]:focus {
   border: 1px solid #ababab;
 }
 
-.chicken .right a img:hover {
+.right a img:hover,
+.beef_left a img:hover {
   background-color: #a9a5a5;
 }
 
@@ -179,12 +181,13 @@ input[type="search"]:focus {
   margin-top: -41px;
 }
 
-.chicken .right .right_buttons {
+.right .right_buttons {
   margin-top: 40px;
   margin-left: 160px;
 }
 
-.right_buttons button, .left_buttons button{
+.right_buttons button,
+.left_buttons button {
   border: none;
   width: 220px;
   height: 50px;
@@ -217,27 +220,49 @@ input[type="search"]:focus {
   background-color: var(--basic2hover);
 }
 
-.beef .beef_left h1{
-  margin-top: 80px;
+.beef_left,
+.beef_right {
+  width: 710px;
+  height: 540px;
+}
+
+.beef_left h1 {
   margin-bottom: 10px;
 }
 
-.beef .beef_left p{
-   margin: 20px 50px 10px 100px;
+.beef_left p {
+  margin: 20px 20px 10px 120px;
 }
 
-.beef .beef_left h6{
-  margin-top: 20px;
-  margin-left: 80px;
+.beef_left h6 {
+  margin-top: 25px;
+  margin-left: 130px;
 }
 
-.beef .beef_left, .beef .beef_right{
-  width: 710px;
-  height: 580px;
-}
-
-.beef .beef_right img{
+.beef_left a {
   display: flex;
-  margin-left: 840px;
-  margin-top: -560px;
+}
+
+.beef_left .minus {
+  margin-left: 200px;
+  margin-top: 4px;
+}
+
+.beef_left button {
+  margin-top: 50px;
+}
+
+.beef_left .btn1 {
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.beef_left .btn2 {
+  margin-left: 30px;
+}
+
+.beef_right img {
+  display: flex;
+  margin-left: 860px;
+  margin-top: -500px;
 }
