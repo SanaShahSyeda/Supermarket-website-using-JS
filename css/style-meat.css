@@ -63,12 +63,27 @@ input[type="search"]:focus {
   outline: none;
 }
 
-.background-img img {
+.background-img img{
   width: 60px;
-  display: flex;
-  margin-top: -47px;
-  margin-left: 1420px;
+  margin-top: -60px;
+  display: inline-block;
 }
+
+.background-img img:hover{
+  background-color: #969090;
+}
+
+.background-img .help img{
+  width: 38px;
+  height: 50px;
+  margin-left: 1330px;
+}
+
+.background-img .cart img{
+  margin-left: 20px;
+  margin-top: -45px;
+}
+
 
 .background-img h1 {
   color: #9e9a9a;
