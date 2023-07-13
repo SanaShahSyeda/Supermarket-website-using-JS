@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: var(--primarybg);
 }
 
 :root {
@@ -25,6 +26,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("/Images/meat.png");
+}
+
+form, form a, form a img{
+  background-color: transparent;
 }
 
 input[type="search"] {
@@ -96,12 +101,14 @@ input[type="search"]:focus {
   color: #9e9a9a;
   margin-top: 70px;
   text-align: center;
+  background-color: transparent;
 }
 
 .background-img p {
   font-size: 27px;
   color: #f9e5e5;
   text-align: center;
+  background-color: transparent;
   margin: 50px 240px 10px 240px;
 }
 
@@ -111,6 +118,10 @@ input[type="search"]:focus {
   width: 560px;
   height: 480px;
   border-radius: 22px;
+}
+
+.chicken{
+  margin-bottom: 100px;
 }
 
 .chicken .left img,
@@ -123,6 +134,20 @@ input[type="search"]:focus {
 .mutton .right {
   margin-left: 680px;
   margin-top: -470px;
+}
+
+.right::before, .beef_left:before {
+  content: "";
+  display: block;
+  width: 580px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  border-bottom: 5px solid #8b6265;
+}
+
+.beef_left::before{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .chicken .right h1,
@@ -226,9 +251,6 @@ input[type="search"]:focus {
   height: 540px;
 }
 
-.beef_left h1 {
-  margin-bottom: 10px;
-}
 
 .beef_left p {
   margin: 20px 20px 10px 120px;
