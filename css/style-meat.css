@@ -187,7 +187,9 @@ input[type="search"]:focus {
 
 .chicken .right a img,
 .beef .beef_left a img,
-.mutton .right a img {
+.mutton .right a img,
+.chicken .right .quantity,
+.mutton .right .quantity {
   width: 30px;
   height: 38px;
   display: flex;
@@ -199,13 +201,26 @@ input[type="search"]:focus {
   background-color: #a9a5a5;
 }
 
-.minus img {
+.right .minus img {
   margin-left: 260px;
   margin-top: -22px;
 }
 
-.plus img {
-  margin-left: 350px;
+.chicken .quantity,
+.mutton .quantity {
+  margin-left: 320px;
+  margin-top: -40px;
+  font-size: 20px;
+}
+
+.right .quantity span,
+.beef .beef_left .quantity span {
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+.right .plus img {
+  margin-left: 370px;
   margin-top: -41px;
 }
 
@@ -272,8 +287,22 @@ input[type="search"]:focus {
 }
 
 .beef_left .minus {
-  margin-left: 200px;
-  margin-top: 4px;
+  margin-left: 320px;
+  margin-top: -25px;
+}
+
+.beef .beef_left .quantity {
+  width: 30px;
+  height: 38px;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 390px;
+  border: 1px solid #8a4242;
+}
+
+.beef_left .plus{
+  margin-left: 450px;
+  margin-top: -50px;
 }
 
 .beef_left button {
@@ -317,7 +346,8 @@ input[type="search"]:focus {
   margin-left: 50px;
 }
 
-.contact-us div h6:nth-of-type(1), .contact-us div h6:nth-of-type(2) {
+.contact-us div h6:nth-of-type(1),
+.contact-us div h6:nth-of-type(2) {
   color: #985151;
   margin-top: 10px;
 }
@@ -340,13 +370,13 @@ input[type="search"]:focus {
 
 .contact-us div a {
   display: flex;
-  color: #395b91;
   font-size: 20px;
   margin-top: 30px;
+  color: #395b91;
   margin-left: 100px;
   text-decoration: none;
 }
 
-.contact-us div a:hover{
+.contact-us div a:hover {
   color: #f6acac;
 }
