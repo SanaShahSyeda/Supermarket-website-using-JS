@@ -114,31 +114,39 @@ input[type="search"]:focus {
   margin: 50px 240px 10px 240px;
 }
 
-.chicken .left img,
+.chicken .chicken_left img,
 .beef .beef_right img,
-.mutton .left img {
+.mutton .mutton_left img {
   width: 560px;
   height: 480px;
   border-radius: 22px;
+}
+
+.beef_left .minus img,
+.chicken_right .minus img,
+.mutton_right .minus img{
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .chicken {
   margin-bottom: 100px;
 }
 
-.chicken .left img,
-.mutton .left img {
+.chicken .chicken_left img,
+.mutton .mutton_left img {
   margin-top: 90px;
   margin-left: 100px;
 }
 
-.chicken .right,
-.mutton .right {
+.chicken .chicken_right,
+.mutton .mutton_right {
   margin-left: 680px;
   margin-top: -470px;
 }
 
-.right::before,
+.chicken_right::before,
+.mutton_right::before,
 .beef_left:before {
   content: "";
   display: block;
@@ -153,55 +161,57 @@ input[type="search"]:focus {
   margin-bottom: 10px;
 }
 
-.chicken .right h1,
+.chicken .chicken_right h1,
 .beef .beef_left h1,
-.mutton .right h1 {
+.mutton .mutton_right h1 {
   text-align: center;
 }
 
-.chicken .right p,
+.chicken .chicken_right p,
 .beef .beef_left p,
-.mutton .right p {
+.mutton .mutton_right p {
   color: #545353;
   font-size: 21px;
   text-align: justify;
 }
 
-.chicken .right p,
-.mutton .right p {
+.chicken .chicken_right p,
+.mutton .mutton_right p {
   margin: 30px 110px 100px 60px;
 }
 
-.chicken .right h6,
+.chicken .chicken_right h6,
 .beef .beef_left h6,
-.mutton .right h6 {
+.mutton .mutton_right h6 {
   font-size: 20px;
   color: #7ac068;
 }
 
-.chicken .right h6,
-.mutton .right h6 {
+.chicken .chicken_right h6,
+.mutton .mutton_right h6 {
   margin-top: -60px;
   margin-left: 70px;
 }
 
-.chicken .right a img,
+.chicken .chicken_right a img,
 .beef .beef_left a img,
-.mutton .right a img,
-.chicken .right .quantity,
-.mutton .right .quantity {
+.mutton .mutton_right a img,
+.chicken .chicken_right .quantity,
+.mutton .mutton_right .quantity{
   width: 30px;
   height: 38px;
   display: flex;
   border: 1px solid #ababab;
 }
 
-.right a img:hover,
+.chicken_right a img:hover,
+.mutton_right a img:hover,
 .beef_left a img:hover {
   background-color: #a9a5a5;
 }
 
-.right .minus img {
+.chicken_right .minus img,
+.mutton_right .minus img {
   margin-left: 260px;
   margin-top: -22px;
 }
@@ -213,23 +223,27 @@ input[type="search"]:focus {
   font-size: 20px;
 }
 
-.right .quantity span,
+.mutton_right .quantity span,
+.chicken_right .quantity span,
 .beef .beef_left .quantity span {
   margin-top: 9px;
   margin-left: 10px;
 }
 
-.right .plus img {
+.chicken_right .plus img,
+.mutton_right .plus img {
   margin-left: 370px;
   margin-top: -41px;
 }
 
-.right .right_buttons {
+.chicken_right_buttons,
+.mutton_right_buttons {
   margin-top: 40px;
   margin-left: 160px;
 }
 
-.right_buttons button,
+.mutton_right_buttons button,
+.chicken_right_buttons button,
 .left_buttons button {
   border: none;
   width: 220px;
@@ -248,7 +262,8 @@ input[type="search"]:focus {
   background-color: var(--basic1hover);
 }
 
-.right_buttons button:nth-of-type(2) {
+.chicken_right_buttons button:nth-of-type(2),
+.mutton_right_buttons button:nth-of-type(2) {
   margin-left: 40px;
 }
 
@@ -300,7 +315,7 @@ input[type="search"]:focus {
   border: 1px solid #8a4242;
 }
 
-.beef_left .plus{
+.beef_left .plus {
   margin-left: 450px;
   margin-top: -50px;
 }

@@ -3,28 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
   //   var chicken_q = 0;
   //   var mutton_q = 0;
 
-  // get value of quantity
-  var spans = document.getElementsByClassName("quantity");
-  for (var i = 0; i < spans.length; i++) {
-    var value = spans[i].textContent;
-    console.log(value);
-    if (value == 1) {
-      console.log("value in if -----");
-      var link = document.getElementsByClassName("minus");
-      var image = document.getElementsByClassName("minus-image");
 
-      if (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-      }
-      if (image) {
-        image.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-      }
-    }
-  }
+  // get value of quantity
+  //   var spans = document.getElementsByClassName("quantity");
+  //   for (var i = 0; i < spans.length; i++) {
+  //     var value = spans[i].textContent;
+  //     console.log(value);
+  //     var images = document.getElementsByClassName("image");
+
+  //     for (var i = 0; i < images.length; i++) {
+  //       images[i].addEventListener("click", function (event) {
+  //         event.preventDefault();
+  //       });
+  //     }
+  //   }
+
+  
+  //   var d = document.getElementsById("meats");
+
+  //     for (var i = 0; i < images.length; i++) {
+  //       images[i].addEventListener("click", function (event) {
+  //         event.preventDefault();
+  //       });
 
   // get value of search-bar and scroll to intended portion.
   document
@@ -50,5 +50,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 function add_quantity() {}
-  function sub_quantity() {}
-  function addCartStatus() {}
+function sub_quantity() {}
+function addCartStatus() {}
