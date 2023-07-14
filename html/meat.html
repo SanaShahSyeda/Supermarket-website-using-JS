@@ -8,10 +8,10 @@
   </head>
 
   <body>
-    <div class="main">
+    <div id="main" class="main">
       <div class="background-img">
-        <form>
-          <input type="search" placeholder=" Search..." />
+        <form id="form-search">
+          <input id="search-bar" type="search" placeholder=" Search..." />
           <button type="submit">Search</button>
           <a class="help" href=""
             ><img src="/Images/question-icon.png" alt=""
@@ -34,134 +34,136 @@
           section and discover the delicious possibilities that await you!
         </p>
       </div>
-      <div  id="chicken" class="chicken">
-        <div class="left">
-          <img src="/Images/chicken.png" alt="" />
-        </div>
-        <div class="right">
-          <h1>Chicken</h1>
-          <p>
-            Welcome to our Chicken Category! Prepare to embark on a delightful
-            culinary journey with our wide range of chicken products that are
-            sure to satisfy your taste buds. From succulent roasted chicken to
-            mouthwatering chicken recipes from around the world, we have
-            something to please every palate. Our raw chicken offerings include
-            a range of cuts, such as boneless skinless chicken breasts, tender
-            chicken thighs, juicy drumsticks, and flavorful chicken wings.
-            Whether you're planning to grill, roast, stir-fry, or simmer, our
-            selection of raw chicken cuts provides versatility for any cooking
-            method or recipe. select your preferred cuts, and get ready to
-            create delicious, wholesome meals that will impress your family and
-            friends. With our fresh and flavorful raw chicken, the possibilities
-            for culinary excellence are endless!
-          </p>
-          <h6>Quantity per Kilo/.</h6>
-          <a onclick="sub_quantity()" class="minus" href=""
-            ><img src="/Images/minus-symbol.png" alt=""
-          /></a>
-          <div class="quantity"> <span>1</span></div>
-          <a onclick="add_quantity()" class="plus" href=""
-            ><img src="/Images/plus-symbol.png" alt=""
-          /></a>
-          <div class="right_buttons">
-            <button class="btn1">Buy Now</button>
-            <button class="btn2">Add to cart</button>
+      <div id="meats">
+        <div id="chicken" class="chicken">
+          <div class="left">
+            <img src="/Images/chicken.png" alt="" />
+          </div>
+          <div class="right">
+            <h1>Chicken</h1>
+            <p>
+              Welcome to our Chicken Category! Prepare to embark on a delightful
+              culinary journey with our wide range of chicken products that are
+              sure to satisfy your taste buds. From succulent roasted chicken to
+              mouthwatering chicken recipes from around the world, we have
+              something to please every palate. Our raw chicken offerings
+              include a range of cuts, such as boneless skinless chicken
+              breasts, tender chicken thighs, juicy drumsticks, and flavorful
+              chicken wings. Whether you're planning to grill, roast, stir-fry,
+              or simmer, our selection of raw chicken cuts provides versatility
+              for any cooking method or recipe. select your preferred cuts, and
+              get ready to create delicious, wholesome meals that will impress
+              your family and friends. With our fresh and flavorful raw chicken,
+              the possibilities for culinary excellence are endless!
+            </p>
+            <h6>Quantity per Kilo/.</h6>
+            <a onclick="sub_quantity()" class="minus" href=""
+              ><img src="/Images/minus-symbol.png" alt=""
+            /></a>
+            <div class="quantity"><span>1</span></div>
+            <a onclick="add_quantity()" class="plus" href=""
+              ><img src="/Images/plus-symbol.png" alt=""
+            /></a>
+            <div class="right_buttons">
+              <button class="btn1">Buy Now</button>
+              <button class="btn2">Add to cart</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="beef"  class="beef">
-        <div class="beef_left">
-          <h1><br />Beef</h1>
-          <p>
-            Welcome to our premium beef meat section, where taste and quality
-            meet in perfect harmony. At our supermarket, we take great pride in
-            offering you the finest selection of beef that will elevate your
-            culinary experience to new heights. Our beef comes from carefully
-            selected farms known for their commitment to sustainable and ethical
-            practices. We work closely with farmers who prioritize animal
-            welfare, ensuring that the cattle are raised in stress-free
-            environments, allowing them to thrive and develop their full flavor
-            potential. Indulge in the rich marbling and superior texture that
-            our beef offers. The marbling, the delicate distribution of fat
-            throughout the meat, ensures an exceptional dining experience, as it
-            melts during cooking, infusing the meat with unparalleled juiciness
-            and flavor.
-          </p>
-          <h6>Quantity per Kilo/.</h6>
-          <a onclick="sub_quantity()" class="minus" href=""
-            ><img src="/Images/minus-symbol.png" alt=""
-          /></a>
-          <div class="quantity"><span>1</span></div>
-          <a onclick="add_quantity()" class="plus" href=""
-            ><img src="/Images/plus-symbol.png" alt=""
-          /></a>
-          <div class="left_buttons">
-            <button class="btn1">Buy Now</button>
-            <button class="btn2">Add to Cart</button>
+        <div id="beef" class="beef">
+          <div class="beef_left">
+            <h1><br />Beef</h1>
+            <p>
+              Welcome to our premium beef meat section, where taste and quality
+              meet in perfect harmony. At our supermarket, we take great pride
+              in offering you the finest selection of beef that will elevate
+              your culinary experience to new heights. Our beef comes from
+              carefully selected farms known for their commitment to sustainable
+              and ethical practices. We work closely with farmers who prioritize
+              animal welfare, ensuring that the cattle are raised in stress-free
+              environments, allowing them to thrive and develop their full
+              flavor potential. Indulge in the rich marbling and superior
+              texture that our beef offers. The marbling, the delicate
+              distribution of fat throughout the meat, ensures an exceptional
+              dining experience, as it melts during cooking, infusing the meat
+              with unparalleled juiciness and flavor.
+            </p>
+            <h6>Quantity per Kilo/.</h6>
+            <a onclick="sub_quantity()" class="minus" href=""
+              ><img src="/Images/minus-symbol.png" alt=""
+            /></a>
+            <div class="quantity"><span>1</span></div>
+            <a onclick="add_quantity()" class="plus" href=""
+              ><img src="/Images/plus-symbol.png" alt=""
+            /></a>
+            <div class="left_buttons">
+              <button class="btn1">Buy Now</button>
+              <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+          <div class="beef_right">
+            <img src="/Images/beef.png" alt="" />
           </div>
         </div>
-        <div class="beef_right">
-          <img src="/Images/beef.png" alt="" />
-        </div>
-      </div>
-      <div id="mutton"  class="mutton">
-        <div class="left">
-          <img src="/Images/mutton.png" alt="" />
-        </div>
-        <div class="right">
-          <h1>Mutton</h1>
-          <p>
-            Our mutton is sourced from trusted farmers who prioritize animal
-            welfare and follow sustainable farming practices. We ensure that the
-            lambs are raised in stress-free environments, allowing them to
-            develop robust flavors and tender meat. We work closely with our
-            suppliers to guarantee the highest standards of quality and ethical
-            practices. Each cut of mutton in our selection is handpicked by our
-            experienced butchers, who possess extensive knowledge and expertise
-            in meat selection. From succulent racks of lamb to juicy leg cuts
-            and flavorful shoulder options, we have a wide variety of cuts to
-            suit your culinary needs. Indulge in the rich, natural flavors of
-            our mutton.
-          </p>
-          <h6>Quantity per Kilo/.</h6>
-          <a onclick="sub_quantity()" class="minus" href=""
-            ><img src="/Images/minus-symbol.png" alt=""
-          /></a>
-          <div class="quantity"> <span>1</span></div>
-          <a onclick="add_quantity()" class="plus" href=""
-            ><img src="/Images/plus-symbol.png" alt=""
-          /></a>
-          <div class="right_buttons">
-            <button class="btn1">Buy Now</button>
-            <button class="btn2">Add to cart</button>
+        <div id="mutton" class="mutton">
+          <div class="left">
+            <img src="/Images/mutton.png" alt="" />
+          </div>
+          <div class="right">
+            <h1>Mutton</h1>
+            <p>
+              Our mutton is sourced from trusted farmers who prioritize animal
+              welfare and follow sustainable farming practices. We ensure that
+              the lambs are raised in stress-free environments, allowing them to
+              develop robust flavors and tender meat. We work closely with our
+              suppliers to guarantee the highest standards of quality and
+              ethical practices. Each cut of mutton in our selection is
+              handpicked by our experienced butchers, who possess extensive
+              knowledge and expertise in meat selection. From succulent racks of
+              lamb to juicy leg cuts and flavorful shoulder options, we have a
+              wide variety of cuts to suit your culinary needs. Indulge in the
+              rich, natural flavors of our mutton.
+            </p>
+            <h6>Quantity per Kilo/.</h6>
+            <a onclick="sub_quantity()" class="minus" href=""
+              ><img src="/Images/minus-symbol.png" alt=""
+            /></a>
+            <div class="quantity"><span>1</span></div>
+            <a onclick="add_quantity()" class="plus" href=""
+              ><img src="/Images/plus-symbol.png" alt=""
+            /></a>
+            <div class="right_buttons">
+              <button class="btn1">Buy Now</button>
+              <button class="btn2">Add to cart</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact-us">
-        <div>
-          <h2>
-            <br />
-            FIND US
-          </h2>
-          <h6>
-            <br />
-            121 Rock street, 21 <br />Avenue, NewYork, <br />NY 19103900
-          </h6>
-        </div>
-        <div>
-          <h2>
-            <br />
-            CALL US
-          </h2>
-          <a href="">1(21)-567 62</a>
-          <a href="">9(11)-777 43</a>
-        </div>
-        <div class="two">
-          <h2><br />HOURS</h2>
-          <h4>Monday-Saturday</h4>
-          <h6>9am - 7pm</h6>
-          <h4>Sunday</h4>
-          <h6>10am - 6am</h6>
+        <div class="contact-us">
+          <div>
+            <h2>
+              <br />
+              FIND US
+            </h2>
+            <h6>
+              <br />
+              121 Rock street, 21 <br />Avenue, NewYork, <br />NY 19103900
+            </h6>
+          </div>
+          <div>
+            <h2>
+              <br />
+              CALL US
+            </h2>
+            <a href="">1(21)-567 62</a>
+            <a href="">9(11)-777 43</a>
+          </div>
+          <div class="two">
+            <h2><br />HOURS</h2>
+            <h4>Monday-Saturday</h4>
+            <h6>9am - 7pm</h6>
+            <h4>Sunday</h4>
+            <h6>10am - 6am</h6>
+          </div>
         </div>
       </div>
     </div>
