@@ -122,13 +122,6 @@ input[type="search"]:focus {
   border-radius: 22px;
 }
 
-.beef_left .minus img,
-.chicken_right .minus img,
-.mutton_right .minus img{
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
 .chicken {
   margin-bottom: 100px;
 }

@@ -3,29 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //   var chicken_q = 0;
   //   var mutton_q = 0;
 
-
-  // get value of quantity
-  //   var spans = document.getElementsByClassName("quantity");
-  //   for (var i = 0; i < spans.length; i++) {
-  //     var value = spans[i].textContent;
-  //     console.log(value);
-  //     var images = document.getElementsByClassName("image");
-
-  //     for (var i = 0; i < images.length; i++) {
-  //       images[i].addEventListener("click", function (event) {
-  //         event.preventDefault();
-  //       });
-  //     }
-  //   }
-
-  
-  //   var d = document.getElementsById("meats");
-
-  //     for (var i = 0; i < images.length; i++) {
-  //       images[i].addEventListener("click", function (event) {
-  //         event.preventDefault();
-  //       });
-
   // get value of search-bar and scroll to intended portion.
   document
     .getElementById("form-search")
@@ -48,7 +25,78 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
+    
 });
-function add_quantity() {}
-function sub_quantity() {}
+
+
+document.getElementById("c-plus").addEventListener("click", add_chicken_quantity);
+document.getElementById("c-minus").addEventListener("click", sub_chicken_quantity);
+document.getElementById("b-plus").addEventListener("click", add_beef_quantity);
+document.getElementById("b-minus").addEventListener("click", sub_beef_quantity);
+document.getElementById("m-plus").addEventListener("click", add_mutton_quantity);
+document.getElementById("m-minus").addEventListener("click", sub_mutton_quantity);
+
+function add_chicken_quantity(event) {
+  //prevents loading of page 
+  event.preventDefault();
+
+  var categorie = document.getElementById("chicken");
+  var span = categorie.getElementsByClassName("quantity");
+  var value = span[0].textContent;
+  span[0].textContent = parseInt(value) + 1;
+}
+
+function sub_chicken_quantity(event) {
+  //prevents loading of page 
+  event.preventDefault();
+
+  var categorie = document.getElementById("chicken");
+  var span = categorie.getElementsByClassName("quantity");
+  console.log("abcdefgh");
+  var value = span[0].textContent;
+  if (parseInt(value) > 1) {
+    span[0].textContent = parseInt(value) - 1;
+  }
+}
+
+function add_beef_quantity(event) {
+   //prevents loading of page 
+  event.preventDefault();
+
+  var categorie = document.getElementById("beef");
+  var span = categorie.getElementsByClassName("quantity");
+  var value = span[0].textContent;
+  span[0].textContent = parseInt(value) + 1;
+}
+function sub_beef_quantity(event) {
+    //prevents loading of page 
+  event.preventDefault();
+
+  var categorie = document.getElementById("beef");
+  var span = categorie.getElementsByClassName("quantity");
+  var value = span[0].textContent;
+  if (parseInt(value) > 1) {
+    span[0].textContent = parseInt(value)-1;
+  }
+}
+function add_mutton_quantity(event) {
+     //prevents loading of page 
+     event.preventDefault();
+
+  var categorie = document.getElementById("mutton");
+  var span = categorie.getElementsByClassName("quantity");
+  var value = span[0].textContent;
+  span[0].textContent = parseInt(value) + 1;
+}
+function sub_mutton_quantity(event) {
+    //prevents loading of page 
+    event.preventDefault();
+
+  var categorie = document.getElementById("mutton");
+  var span = categorie.getElementsByClassName("quantity");
+  var value = span[0].textContent;
+  if (parseInt(value) > 1) {
+    span[0].textContent = parseInt(value)-1;
+  }
+}
 function addCartStatus() {}
