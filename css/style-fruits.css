@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+
+.background{
+    width: 1536px;
+    height: 745px;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/Images/fruits-bg1.png");
+  }
+
+  .logo img{
+    width: 110px;
+    height: 100px;
+  }
