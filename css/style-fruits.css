@@ -73,6 +73,13 @@ svg{
   margin-left: 20px;
 }
 
+.background h3{
+    color: rgb(144, 74, 74);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
 .categorie-show{
     height: 745px;
 }
