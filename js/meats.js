@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var beef_q = 0;
-  var chicken_q = 0;
-  var mutton_q = 0;
+  // var beef_q = 0;
+  // var chicken_q = 0;
+  // var mutton_q = 0;
 
   // get value of search-bar and scroll to intended portion.
   document
@@ -99,41 +99,41 @@ function sub_mutton_quantity(event) {
   }
 }
 
-document.getElementById("c-plus").addEventListener("click", createElement);
-// document
-// .getElementById("b-plus")
-// .addEventListener("click", createElement);
-// document
-// .getElementById("m-plus")
-// .addEventListener("click", createElement);
+var cart_value = 0;
 
-function createElement(event) {
+// When adding event listeners, you should pass the function reference, not its result.
+
+// document.getElementById("c-plus").addEventListener("click", createElement(event,"c-plus"));
+// document.getElementById("b-plus").addEventListener("click", createElement(event, "b-plus"));
+// document.getElementById("m-plus").addEventListener("click", createElement(event,"m-plus"));
+
+// correct way to pass a function reference instead to use it directly.
+// anonymous or arrow function both could be used to pass function reference for adding event listeners.
+
+document.getElementById("c-plus").addEventListener("click", function (event) {
+  createElement(event, "c-plus");
+});
+document.getElementById("b-plus").addEventListener("click", function (event) {
+  createElement(event, "b-plus");
+});
+document.getElementById("m-plus").addEventListener("click", function (event) {
+  createElement(event, "m-plus");
+});
+
+function createElement(event, id) {
   event.preventDefault();
-
-  var c = document.querySelectorAll("#form-search > a");
-  console.log(c);
-  for (var i = 0; i < c.length; i++) {
-    var category = c[i];
-    console.log(category);
-    var categoryName = category.getAttribute("class");
-
-    if (categoryName.includes("cart-status")) {
-      break;
-    } else {
-      var newElement = document.createElement("span");
-      newElement.textContent += " " + 1;
-
-      //add classname to the new element
-      newElement.classList.add("cart-status");
-
-      // Add the new element to the container
-      var container = document.getElementById("cart");
-      container.appendChild(newElement);
-      document
-        .getElementById("c-plus")
-        .removeEventListener("click", createElement);
-      break;
-    }
+  var cart_status = document.querySelector("#cart .cart-status");
+  if (cart_status) {
+    cart_value = parseInt(cart_status.textContent) + 1;
+    cart_status.textContent = cart_value;
+  } else {
+    var newElement = document.createElement("span");
+    cart_value = 1;
+    newElement.textContent = cart_value;
+    newElement.classList.add("cart-status");
+    var container = document.getElementById("cart");
+    container.appendChild(newElement);
   }
 }
-function addCartStatus() {}
+
+// function addCartStatus() {}
