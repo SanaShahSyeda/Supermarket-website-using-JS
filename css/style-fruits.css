@@ -23,7 +23,7 @@
 }
 
 input {
-  color: rgb(0, 0, 0);   
+  color: rgb(0, 0, 0);
   width: 600px;
   height: 30px;
   border: none;
@@ -34,52 +34,90 @@ input {
 }
 
 input[type="search"]::placeholder {
-    color: #121111;
-    font-size: 15px;
+  color: #121111;
+  font-size: 15px;
 }
 
 input[type="search"]:focus {
-    font-size: 20px;
-    outline: none;
-    border-color: #131212;
-    box-shadow: 0 0 3px 0 #161515;
+  font-size: 20px;
+  outline: none;
+  border-color: #131212;
+  box-shadow: 0 0 3px 0 #161515;
 }
 
-svg{
-    width: 30px;
-    height: 40px;
-    margin-top: -60px;
-    margin-left: 10px;
+svg {
+  width: 30px;
+  height: 40px;
+  margin-top: -60px;
+  margin-left: 10px;
 }
 
-.help img,
-.cart img {
+.help-cart {
+  margin-top: -80px;
+}
+
+.help-cart img {
   width: 60px;
   height: 60px;
-  margin-top: -250px;
-  display: inline;
+  display: inline-block;
 }
 
-.help img:hover, .cart img:hover{
-    background-color: rgb(144, 110, 110);
+.help img:hover,
+.cart img:hover {
+  background-color: rgb(144, 110, 110);
 }
 
 .help img {
   width: 50px;
-  margin-left: 310px;
+  margin-left: 280px;
 }
 
 .cart img {
   margin-left: 20px;
 }
 
-.background h3{
-    color: rgb(144, 74, 74);
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
+.background h3 {
+  font-size: 30px;
+  margin-top: 40px;
+  text-align: center;
+  text-transform:capitalize;
+  color: rgb(74, 137, 106);
+  /* color: rgb(144, 74, 74); */
+  font-family:cursive;
 }
 
-.categorie-show{
-    height: 745px;
+
+.intro-1, .intro-2, .intro-3{
+  color: rgb(6, 6, 6);
+  width: 280px;
+  height: 230px;
+  margin-top: 100px;
+  margin-left: 90px;
+  opacity: 0.8;
+  display: inline-table;
+  background-color: rgb(255, 226, 199);
+}
+
+.intro-1{
+  margin-left: 280px;
+}
+
+.intro > div  h4{
+  font-size: 19px;
+  margin-top: 60px;
+  color:brown;
+   text-align: center;
+}
+
+
+.categorie-show {
+  height: 745px;
+  display: flex;
+}
+
+.categorie-show img{
+  display: inline-block;
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
 }
