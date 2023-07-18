@@ -136,4 +136,25 @@ function createElement(event, id) {
   }
 }
 
+var cart_q=0;
+
+document.getElementById("c-minus").addEventListener("click", function (event) {
+  decreaseQuantity(event, "c-minus");
+});
+document.getElementById("b-minus").addEventListener("click", function (event) {
+  decreaseQuantity(event, "b-minus");
+});
+document.getElementById("m-minus").addEventListener("click", function (event) {
+  decreaseQuantity(event, "m-minus");
+});
+
+function decreaseQuantity(event, id){
+  event.preventDefault();
+  var cart_s= document.querySelector("#cart .cart-status");
+  if(cart_s){
+   cart_q= parseInt(cart_s.textContent)-1;
+   cart_s.textContent=cart_q;
+  }
+}
+
 // function addCartStatus() {}
