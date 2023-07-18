@@ -4,8 +4,8 @@
 }
 
 .background {
-  width: 1536px;
-  height: 745px;
+  width: 1518px;
+  height: 744px;
   opacity: 0.8;
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@ input {
   height: 30px;
   border: none;
   margin-top: -60px;
-  margin-left: 400px;
+  margin-left: 420px;
   border-radius: 20px;
   background-color: rgb(175, 201, 183);
 }
@@ -43,8 +43,7 @@ input[type="search"]:focus {
     outline: none;
     border-color: #131212;
     box-shadow: 0 0 3px 0 #161515;
-  }
-  
+}
 
 svg{
     width: 30px;
@@ -57,7 +56,8 @@ svg{
 .cart img {
   width: 60px;
   height: 60px;
-  margin-top: -90px;
+  margin-top: -250px;
+  display: inline;
 }
 
 .help img:hover, .cart img:hover{
@@ -66,9 +66,13 @@ svg{
 
 .help img {
   width: 50px;
-  margin-left: 320px;
+  margin-left: 310px;
 }
 
 .cart img {
   margin-left: 20px;
+}
+
+.categorie-show{
+    height: 745px;
 }
