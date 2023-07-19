@@ -219,7 +219,7 @@ svg {
 
 .buy-heading h1 {
   margin-top: 70px;
-  color: var(--apple-green);
+  color: brown;
 }
 
 .buy-heading h4 {
@@ -229,11 +229,83 @@ svg {
   text-shadow: 0.7px 1px black;
 }
 
-.buy-heading h4::after{
+.buy-heading h4::after {
   content: "";
   width: 200px;
   display: block;
   margin-top: 20px;
   margin-left: 658px;
-  border-bottom: 5px solid brown;
+  border-bottom: 5px solid var(--apple-green);
+}
+
+.buyfruits-left > div,
+.buyfruits-right > div {
+  width: 500px;
+  background-color: aquamarine;
+}
+
+.buyfruits-left {
+  display: block;
+  margin-top: 20px;
+}
+
+.buyfruits-left > div {
+  margin-left: 200px;
+}
+
+.buyfruits-right > div {
+  margin-left: 850px;
+}
+
+.buyfruits-right {
+  display: block;
+  margin-top: -530px;
+}
+
+.buyfruits-left img,
+.buyfruits-right img {
+  width: 130px;
+  height: 90px;
+  border-radius: 25%;
+}
+
+.buyfruits-left h3 {
+  margin-left: 150px;
+}
+
+.buy-fruits button {
+  width: 160px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+}
+
+.buyfruits-left a img,
+.buyfruits-left .quantity span {
+  width: 30px;
+  height: 38px;
+  display: flex;
+  border: 1px solid #ababab;
+}
+
+.btn-cart{
+  font-size: 18px;
+  color: white;
+  background-color: brown;
+}
+
+.btn-cart:hover{
+  color: #121111;
+  background-color: rgb(191, 183, 183);
+}
+
+.btn-buy{
+  font-size: 18px;
+  color: aliceblue;
+  background-color: #212020;
+}
+
+.btn-buy:hover{
+  color: #161515;
+  background-color: var(--apple-green);
 }
