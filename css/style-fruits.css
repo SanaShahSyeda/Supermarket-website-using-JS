@@ -80,14 +80,15 @@ svg {
   font-size: 30px;
   margin-top: 40px;
   text-align: center;
-  text-transform:capitalize;
+  text-transform: capitalize;
   color: rgb(74, 137, 106);
   /* color: rgb(144, 74, 74); */
-  font-family:cursive;
+  font-family: cursive;
 }
 
-
-.intro-1, .intro-2, .intro-3{
+.intro-1,
+.intro-2,
+.intro-3 {
   color: rgb(6, 6, 6);
   width: 280px;
   height: 230px;
@@ -98,26 +99,52 @@ svg {
   background-color: rgb(255, 226, 199);
 }
 
-.intro-1{
+.intro-1 {
   margin-left: 280px;
 }
 
-.intro > div  h4{
+.intro > div h4 {
   font-size: 19px;
   margin-top: 60px;
-  color:brown;
-   text-align: center;
+  color: brown;
+  text-align: center;
 }
-
 
 .categorie-show {
-  height: 745px;
-  display: flex;
+  height: 700px;
+  margin-top: 70px;
 }
 
-.categorie-show img{
-  display: inline-block;
-  width: 200px;
+.categorie-show img {
+  width: 180px;
   height: 180px;
+  margin-left: 10px;
   border-radius: 50%;
+}
+
+.categorie-show h4{
+  font-size: 18px;
+  text-align: center;
+}
+
+.categorie-show h4:hover{
+  color: brown;
+  text-decoration:solid underline;
+}
+
+.upper-categorie div{
+  margin-left: 90px;
+  display: inline-block;
+}
+
+.lower-categorie div{
+  display: inline-block;
+}
+
+.c-watermelon{
+  margin-left: 388px;
+}
+
+.c-pomegranate, .c-strawberries{
+  margin-left: 60px;
 }
