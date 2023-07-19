@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-:root{
+:root {
+  --background1: antiquewhite;
+  --background2: rgb(226, 210, 185);
   --apple-green: rgb(74, 137, 106);
   --apple-greenlight: rgb(173, 205, 188);
 }
-
 
 .background {
   width: 1518px;
@@ -117,7 +118,7 @@ svg {
 
 .categorie-show {
   height: 730px;
-  background-color: antiquewhite;
+  background-color: var(--background1);
 }
 
 .categorie-show img {
@@ -127,7 +128,7 @@ svg {
   border-radius: 50%;
 }
 
-.categorie-show a{
+.categorie-show a {
   display: block;
   color: #121111;
   font-size: 20px;
@@ -135,35 +136,36 @@ svg {
 }
 
 .upper-categorie > div a:nth-of-type(2),
-.lower-categorie > div a:nth-of-type(2){
+.lower-categorie > div a:nth-of-type(2) {
   margin-left: 50px;
 }
 
-.categorie-show a:hover{
+.categorie-show a:hover {
   color: brown;
-  text-decoration:solid underline;
+  text-decoration: solid underline;
 }
 
-.upper-categorie div{
+.upper-categorie div {
   margin-top: 40px;
   margin-left: 130px;
   display: inline-block;
 }
 
-.lower-categorie div{
+.lower-categorie div {
   margin-top: 20px;
   display: inline-block;
 }
 
-.c-watermelon{
+.c-watermelon {
   margin-left: 420px;
 }
 
-.c-pomegranate, .c-strawberries{
+.c-pomegranate,
+.c-strawberries {
   margin-left: 100px;
 }
 
-.ctg-banner{
+.ctg-banner {
   width: 1518px;
   height: 240px;
   margin-top: 80px;
@@ -173,7 +175,7 @@ svg {
   background-color: var(--apple-greenlight);
 }
 
-.inner-banner{
+.inner-banner {
   width: 580px;
   height: 160px;
   margin-top: 45px;
@@ -182,25 +184,47 @@ svg {
   background-color: white;
 }
 
-.inner-banner h4{
+.inner-banner h4 {
   color: brown;
   font-size: 22px;
   text-align: center;
 }
 
-.inner-banner img{
+.inner-banner img {
   width: 30px;
   height: 30px;
   margin-top: 20px;
   margin-left: 210px;
 }
 
-.inner-banner a{
+.inner-banner a {
   margin-top: -30px;
   margin-left: 250px;
   color: rgb(108, 107, 107);
 }
 
-.inner-banner a:hover{
+.inner-banner a:hover {
   color: var(--apple-green);
+}
+
+.buy-fruits {
+  height: 680px;
+  background-color: white;
+}
+
+.buy-heading h1,
+.buy-heading h4 {
+  text-align: center;
+}
+
+.buy-heading h1 {
+  color: brown;
+  margin-top: 70px;
+}
+
+.buy-heading h4 {
+  font-size: 18px;
+  color: #161515;
+  margin-top: 10px;
+  text-shadow: 0.7px 1px black;
 }
