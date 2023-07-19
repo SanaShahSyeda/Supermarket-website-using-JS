@@ -218,8 +218,8 @@ svg {
 }
 
 .buy-heading h1 {
-  color: brown;
   margin-top: 70px;
+  color: var(--apple-green);
 }
 
 .buy-heading h4 {
@@ -227,4 +227,13 @@ svg {
   color: #161515;
   margin-top: 10px;
   text-shadow: 0.7px 1px black;
+}
+
+.buy-heading h4::after{
+  content: "";
+  width: 200px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 658px;
+  border-bottom: 5px solid brown;
 }
