@@ -207,18 +207,13 @@ svg {
   color: var(--apple-green);
 }
 
-.buy-fruits {
-  height: 680px;
-  background-color: white;
-}
-
 .buy-heading h1,
 .buy-heading h4 {
   text-align: center;
 }
 
 .buy-heading h1 {
-  margin-top: 70px;
+  margin-top: 50px;
   color: brown;
 }
 
@@ -233,20 +228,31 @@ svg {
   content: "";
   width: 200px;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 658px;
   border-bottom: 5px solid var(--apple-green);
+}
+
+.apples div,
+.bananas div,
+.oranges div,
+.grapes div,
+.apricots div,
+.watermelon div,
+.pomegranate div,
+.strawberries div{
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .buyfruits-left > div,
 .buyfruits-right > div {
   width: 500px;
-  background-color: aquamarine;
 }
 
 .buyfruits-left {
   display: block;
-  margin-top: 20px;
+  margin-top: 3cqb;
 }
 
 .buyfruits-left > div {
@@ -259,29 +265,68 @@ svg {
 
 .buyfruits-right {
   display: block;
-  margin-top: -530px;
+  margin-top: -616px;
 }
 
 .buyfruits-left img,
 .buyfruits-right img {
-  width: 130px;
-  height: 90px;
+  width: 160px;
+  height: 145px;
   border-radius: 25%;
 }
 
-.buyfruits-left h3 {
-  margin-left: 150px;
+.buyfruits-left h2,
+.buyfruits-right h2{
+  color: var(--apple-green);
+  margin-left: 180px;
+  margin-top: -120px;
+}
+
+.buyfruits-left h3,
+.buyfruits-right h3 {
+  margin-left: -80px;
+  margin-top: -80px;
+}
+
+.pomegranate h3, .watermelon h3, .strawberries h3{
+  margin-left: -120px;
+}
+
+
+.buyfruits-left div a,
+.buyfruits-left .quantity span,
+.buyfruits-right div a,
+.buyfruits-right .quantity span{
+  margin-top: -90px;
+  margin-left: 15px;
 }
 
 .buy-fruits button {
-  width: 160px;
+  display: block;
+  width: 140px;
   height: 35px;
   border: none;
   border-radius: 25px;
 }
 
+.buyfruits-left .btn-cart,
+.buyfruits-right .btn-cart{
+  display: block;
+  margin-left: 180px;
+  margin-top: -70px;
+}
+
+.buyfruits-left .btn-buy,
+.buyfruits-right .btn-buy{
+  display: block;
+  margin-left: 340px;
+  margin-top: -35px;
+}
+
 .buyfruits-left a img,
-.buyfruits-left .quantity span {
+.buyfruits-left .quantity span,
+.buyfruits-right a img,
+.buyfruits-right .quantity span {
   width: 30px;
   height: 38px;
   display: flex;
@@ -295,17 +340,34 @@ svg {
 }
 
 .btn-cart:hover{
-  color: #121111;
-  background-color: rgb(191, 183, 183);
-}
-
-.btn-buy{
-  font-size: 18px;
   color: aliceblue;
   background-color: #212020;
 }
 
+.btn-buy{
+  font-size: 18px;
+  color: #121111;
+  background-color: rgb(122, 194, 150);
+}
+
 .btn-buy:hover{
-  color: #161515;
+  color: white;
   background-color: var(--apple-green);
 }
+
+.buyfruits-left .minus,
+.buyfruits-right .minus,
+.buyfruits-left .plus,
+.buyfruits-right .plus{
+  height: 40px;
+}
+
+.buyfruits-left .minus:hover,
+.buyfruits-left .plus:hover{
+  background-color: #a9a5a5;
+}
+
+/* .buyfruits-left  .p_value text{
+  font-size: 20px;
+  margin-left: 3px;
+} */
