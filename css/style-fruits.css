@@ -396,3 +396,21 @@ svg {
 .buyfruits-right .minus:hover {
   background-color: #a9a5a5;
 }
+
+
+.contact_us{
+  width: 1519px;
+  height: 715px;
+  margin-top: 10px;
+  position: absolute;
+  background-color: var(--background1);
+}
+
+.contact_us .inner-container{
+  width: 850px;
+  height: 570px;
+  margin-left: 335px;
+  margin-top: 75px;
+  border-radius: 25px;
+  background-color: #b8b8b8;
+}
