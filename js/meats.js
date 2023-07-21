@@ -48,7 +48,8 @@ function add_chicken_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#chicken .quantity");
+  const div = document.getElementById("chicken");
+  const span = div.querySelector("span");
   chicken_q = parseInt(span.textContent);
   span.textContent = chicken_q + 1;
 }
@@ -57,7 +58,8 @@ function sub_chicken_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#chicken .quantity");
+  const div = document.getElementById("chicken");
+  const span = div.querySelector("span");
   chicken_q = parseInt(span.textContent);
   if (chicken_q > 1) {
     cart_value = cart_value - 1;
@@ -69,7 +71,8 @@ function add_beef_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#beef .quantity");
+  const div = document.getElementById("beef");
+  const span = div.querySelector("span");
   var beef_q = parseInt(span.textContent);
   span.textContent = beef_q + 1;
 }
@@ -77,7 +80,8 @@ function sub_beef_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#beef .quantity");
+  const div = document.getElementById("beef");
+  const span = div.querySelector("span");
   var beef_q = parseInt(span.textContent);
   if (beef_q > 1) {
     cart_value = cart_value - 1;
@@ -88,7 +92,8 @@ function add_mutton_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#mutton .quantity");
+  const div = document.getElementById("mutton");
+  const span = div.querySelector("span");
   var mutton_q = parseInt(span.textContent);
   span.textContent = mutton_q + 1;
 }
@@ -96,7 +101,8 @@ function sub_mutton_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#mutton .quantity");
+  const div = document.getElementById("mutton");
+  const span = div.querySelector("span");
   var mutton_q = parseInt(span.textContent);
   if (mutton_q > 1) {
     cart_value = cart_value - 1;

@@ -312,19 +312,36 @@ svg {
   margin-left: 15px;
 }
 
-.buyfruits-left .quantity,
-.buyfruits-right .quantity {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: -90px;
-}
-
 .buyfruits-left .minus,
 .buyfruits-right .minus,
 .buyfruits-left .plus,
 .buyfruits-right .plus {
   height: 40px;
+}
+
+.buyfruits-left a img,
+.buyfruits-left .quantity,
+.buyfruits-right a img,
+.buyfruits-right .quantity {
+  width: 30px;
+  height: 38px;
+  display: flex;
+  border: 1px solid #ababab;
+}
+
+.buy-fruits .buyfruits-left .quantity,
+.buy-fruits .buyfruits-right .quantity {
+  width: 30px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: -90px;
+}
+
+.buyfruits-left .quantity span,
+.buyfruits-right .quantity span {
+  font-size: 19px;
+  margin-top: 9px;
+  margin-left: 10px;
 }
 
 .buy-fruits button {
@@ -347,16 +364,6 @@ svg {
   display: block;
   margin-left: 340px;
   margin-top: -35px;
-}
-
-.buyfruits-left a img,
-.buyfruits-left .quantity span,
-.buyfruits-right a img,
-.buyfruits-right .quantity span {
-  width: 30px;
-  height: 38px;
-  display: flex;
-  border: 1px solid #ababab;
 }
 
 .btn-cart {
@@ -507,7 +514,7 @@ svg {
   color: var(--apple-green);
 }
 
-#cart span{
+#cart span {
   width: 20px;
   height: 20px;
   display: flex;
