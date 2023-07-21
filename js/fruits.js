@@ -91,7 +91,8 @@ function add_banana_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#bananas .quantity");
+  const div = document.getElementById("bananas");
+  const span = div.querySelector("span");
   banana_q = parseInt(span.textContent);
   span.textContent = banana_q + 1;
 }
@@ -100,7 +101,8 @@ function sub_banana_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#bananas .quantity");
+  const div = document.getElementById("bananas");
+  const span = div.querySelector("span");
   banana_q = parseInt(span.textContent);
   if (banana_q > 1) {
     cart_value = cart_value - 1;
@@ -112,7 +114,8 @@ function add_apple_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#apples div .quantity");
+  const div = document.getElementById("apples");
+  const span = div.querySelector("span");
   var apple_q = parseInt(span.textContent);
   span.textContent = apple_q + 1;
 }
@@ -120,7 +123,8 @@ function sub_apple_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#apples div .quantity");
+  const div = document.getElementById("apples");
+  const span = div.querySelector("span");
   var apple_q = parseInt(span.textContent);
   if (apple_q > 1) {
     cart_value = cart_value - 1;
@@ -131,7 +135,8 @@ function add_grape_quantity(event) {
   //prevents loading of page
   event.preventDefault();
   cart_value += 1;
-  var span = document.querySelector("#grapes div .quantity");
+  const div = document.getElementById("grapes");
+  const span = div.querySelector("span");
   var grape_q = parseInt(span.textContent);
   span.textContent = grape_q + 1;
 }
@@ -139,7 +144,8 @@ function sub_grape_quantity(event) {
   //prevents loading of page
   event.preventDefault();
 
-  var span = document.querySelector("#grapes  div .quantity");
+  const div = document.getElementById("grapes");
+  const span = div.querySelector("span");
   var grape_q = parseInt(span.textContent);
   if (grape_q > 1) {
     cart_value = cart_value - 1;
@@ -147,104 +153,114 @@ function sub_grape_quantity(event) {
   }
 }
 function add_orange_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-    cart_value += 1;
-    var span = document.querySelector("#oranges div .quantity");
-    var orange_q = parseInt(span.textContent);
-    span.textContent = orange_q + 1;
-  }
-  function sub_orange_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-  
-    var span = document.querySelector("#oranges  div .quantity");
-    var orange_q = parseInt(span.textContent);
-    if (orange_q > 1) {
-      cart_value = cart_value - 1;
-      span.textContent = orange_q - 1;
-    }
-  }
+  //prevents loading of page
+  event.preventDefault();
+  cart_value += 1;
+  const div = document.getElementById("oranges");
+  const span = div.querySelector("span");
+  var orange_q = parseInt(span.textContent);
+  span.textContent = orange_q + 1;
+}
+function sub_orange_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
 
-  function add_apricot_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-    cart_value += 1;
-    var span = document.querySelector("#apricots div .quantity");
-    var apricot_q = parseInt(span.textContent);
-    span.textContent = apricot_q + 1;
+  const div = document.getElementById("oranges");
+  const span = div.querySelector("span");
+  var orange_q = parseInt(span.textContent);
+  if (orange_q > 1) {
+    cart_value = cart_value - 1;
+    span.textContent = orange_q - 1;
   }
-  function sub_apricot_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-  
-    var span = document.querySelector("#apricots  div .quantity");
-    var apricot_q = parseInt(span.textContent);
-    if (orange_q > 1) {
-      cart_value = cart_value - 1;
-      span.textContent = apricot_q - 1;
-    }
-  }
+}
 
-  function add_watermelon_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-    cart_value += 1;
-    var span = document.querySelector("#watermelon div .quantity");
-    var watermelon_q = parseInt(span.textContent);
-    span.textContent = watermelon_q + 1;
-  }
-  function sub_watermelon_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-  
-    var span = document.querySelector("#apricots  div .quantity");
-    var watermelon_q = parseInt(span.textContent);
-    if (orange_q > 1) {
-      cart_value = cart_value - 1;
-      span.textContent = watermelon_q - 1;
-    }
-  }
+function add_apricot_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+  cart_value += 1;
+  const div = document.getElementById("apricots");
+  const span = div.querySelector("span");
+  var apricot_q = parseInt(span.textContent);
+  span.textContent = apricot_q + 1;
+}
+function sub_apricot_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
 
-  function add_pomegranate_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-    cart_value += 1;
-    var span = document.querySelector("#pomegranate div .quantity");
-    var pomegranate_q = parseInt(span.textContent);
-    span.textContent = pomegranate_q + 1;
+  const div = document.getElementById("apricots");
+  const span = div.querySelector("span");
+  var apricot_q = parseInt(span.textContent);
+  if (orange_q > 1) {
+    cart_value = cart_value - 1;
+    span.textContent = apricot_q - 1;
   }
-  function sub_pomegranate_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-  
-    var span = document.querySelector("#pomegranate  div .quantity");
-    var pomegranate_q = parseInt(span.textContent);
-    if (pomegranate_q > 1) {
-      cart_value = cart_value - 1;
-      span.textContent = pomegranate_q - 1;
-    }
-  }
+}
 
-  function add_strawberrie_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-    cart_value += 1;
-    var span = document.querySelector("#strawberries div .quantity");
-    var strawberrie_q = parseInt(span.textContent);
-    span.textContent =strawberrie_q + 1;
+function add_watermelon_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+  cart_value += 1;
+  const div = document.getElementById("watermelon");
+  const span = div.querySelector("span");
+  var watermelon_q = parseInt(span.textContent);
+  span.textContent = watermelon_q + 1;
+}
+function sub_watermelon_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+
+  const div = document.getElementById("watermelon");
+  const span = div.querySelector("span");
+  var watermelon_q = parseInt(span.textContent);
+  if (orange_q > 1) {
+    cart_value = cart_value - 1;
+    span.textContent = watermelon_q - 1;
   }
-  function sub_strawberrie_quantity(event) {
-    //prevents loading of page
-    event.preventDefault();
-  
-    var span = document.querySelector("#strawberries div .quantity");
-    var strawberrie_q = parseInt(span.textContent);
-    if (strawberrie_q > 1) {
-      cart_value = cart_value - 1;
-      span.textContent = strawberrie_q - 1;
-    }
+}
+
+function add_pomegranate_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+  cart_value += 1;
+  const div = document.getElementById("pomegranate");
+  const span = div.querySelector("span");
+  var pomegranate_q = parseInt(span.textContent);
+  span.textContent = pomegranate_q + 1;
+}
+function sub_pomegranate_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+
+  const div = document.getElementById("pomegranate");
+  const span = div.querySelector("span");
+  var pomegranate_q = parseInt(span.textContent);
+  if (pomegranate_q > 1) {
+    cart_value = cart_value - 1;
+    span.textContent = pomegranate_q - 1;
   }
+}
+
+function add_strawberrie_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+  cart_value += 1;
+  const div = document.getElementById("strawberries");
+  const span = div.querySelector("span");
+  var strawberrie_q = parseInt(span.textContent);
+  span.textContent = strawberrie_q + 1;
+}
+function sub_strawberrie_quantity(event) {
+  //prevents loading of page
+  event.preventDefault();
+
+  const div = document.getElementById("starwberries");
+  const span = div.querySelector("span");
+  var strawberrie_q = parseInt(span.textContent);
+  if (strawberrie_q > 1) {
+    cart_value = cart_value - 1;
+    span.textContent = strawberrie_q - 1;
+  }
+}
 
 function addCart(event, id) {
   event.preventDefault();
