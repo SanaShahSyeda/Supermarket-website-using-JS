@@ -3,12 +3,46 @@
   margin: 0;
 }
 
+:root{
+    --leafy-green:rgb(71, 99, 52);
+    --poryphyrophilic: rgb(49, 27, 70);
+}
+
 .home-bg {
-  width: 1535px;
-  height: 713px;
+  width: 1534px;
+  height: 712px;
   opacity: 0.8;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("/Images/leafy-vegetable-bg.png");
+}
+
+nav ul li{
+    margin-top: 20px;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+nav ul a{
+    font-style: bold;
+    font-size: 22px;
+    font-style:normal;
+    font-weight: 60px;
+    color: var(--leafy-green);
+}
+
+nav ul a:hover{
+    color: var(--poryphyrophilic);
+}
+
+.logo{
+    width: 100px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin-top: -35px;
+    margin-left: 1430px;
 }
