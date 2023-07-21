@@ -506,3 +506,15 @@ svg {
 .right-contact a:hover {
   color: var(--apple-green);
 }
+
+#cart span{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  color: white;
+  margin-top: -65px;
+  border-radius: 50%;
+  margin-left: 405px;
+  margin-bottom: 110px;
+  background-color: #8b6265;
+}

@@ -135,7 +135,9 @@
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,bananas)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="apples" id="apples">
@@ -143,13 +145,17 @@
             <div>
               <h2>Apples</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus" id="apple-minus"><img src="/Images/minus-symbol.png" alt="" /></a>
+              <a class="minus" id="apple-minus"
+                ><img src="/Images/minus-symbol.png" alt=""
+              /></a>
               <div class="quantity"><span>1</span></div>
-              <a class="plus"  id="apple-plus" href=""
+              <a class="plus" id="apple-plus" href=""
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,apples)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="oranges" id="oranges">
@@ -165,7 +171,9 @@
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,oranges)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="grapes" id="grapes">
@@ -173,7 +181,7 @@
             <div>
               <h2>Grapes</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus" id="grape-minus"  href=""
+              <a class="minus" id="grape-minus" href=""
                 ><img src="/Images/minus-symbol.png" alt=""
               /></a>
               <div class="quantity"><span>1</span></div>
@@ -181,7 +189,9 @@
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,grapes)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
         </div>
@@ -191,15 +201,17 @@
             <div>
               <h2>Apricots</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus"  id="apricot-minus" href=""
+              <a class="minus" id="apricot-minus" href=""
                 ><img src="/Images/minus-symbol.png" alt=""
               /></a>
               <div class="quantity"><span>1</span></div>
-              <a class="plus"  id="apricot-plus" href=""
+              <a class="plus" id="apricot-plus" href=""
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,apricots)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="watermelon" id="watermelon">
@@ -207,15 +219,17 @@
             <div>
               <h2>Watermelon</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus"  id="watermelon-minus" href=""
+              <a class="minus" id="watermelon-minus" href=""
                 ><img src="/Images/minus-symbol.png" alt=""
               /></a>
               <div class="quantity"><span>1</span></div>
-              <a class="plus"  id="watermelon-plus" href=""
+              <a class="plus" id="watermelon-plus" href=""
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,watermelon)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="pomegranate" id="pomegranate">
@@ -223,15 +237,17 @@
             <div>
               <h2>Pomegranate</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus" id="pomegranate-minus"  href=""
+              <a class="minus" id="pomegranate-minus" href=""
                 ><img src="/Images/minus-symbol.png" alt=""
               /></a>
               <div class="quantity"><span>1</span></div>
-              <a class="plus"  id="pomegranate-plus" href=""
+              <a class="plus" id="pomegranate-plus" href=""
                 ><img src="/Images/plus-symbol.png" alt=""
               /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,pomegranate)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
           <div class="strawberries" id="strawberries">
@@ -239,13 +255,17 @@
             <div>
               <h2>Strawberries</h2>
               <h3>Quantity per kg/.</h3>
-              <a class="minus" id="strawberrie-minus"  href=""
+              <a class="minus" id="strawberrie-minus" href=""
                 ><img src="/Images/minus-symbol.png" alt=""
               /></a>
               <div class="quantity"><span>1</span></div>
-              <a class="plus"  id="strawberrie-plus"><img src="/Images/plus-symbol.png" alt="" /></a>
+              <a class="plus" id="strawberrie-plus"
+                ><img src="/Images/plus-symbol.png" alt=""
+              /></a>
             </div>
-            <button class="btn-cart">Add to cart.</button>
+            <button onclick="addCart(event,strawberries)" class="btn-cart">
+              Add to cart.
+            </button>
             <button class="btn-buy">Buy Now.</button>
           </div>
         </div>
@@ -254,10 +274,16 @@
         <div class="inner-container">
           <div class="left-contact">
             <div class="left-circle">
-              <h2> <br><br> 100%</h2>
+              <h2>
+                <br /><br />
+                100%
+              </h2>
               <h3>Pure & Healthy</h3>
             </div>
-            <h1>healthier and happier <br> <span>life......</span></h1>
+            <h1>
+              healthier and happier <br />
+              <span>life......</span>
+            </h1>
             <button>Pick & Eat</button>
           </div>
           <div class="right-contact">
@@ -270,10 +296,14 @@
             <div class="right2">
               <img src="/Images/contact-office.png" alt="" />
               <h3>OFFICE</h3>
-              <h5>Come say hello at our office HQ. <br> 121 Rock street, 21 Avenue <br> New York, NY. </h5>
+              <h5>
+                Come say hello at our office HQ. <br />
+                121 Rock street, 21 Avenue <br />
+                New York, NY.
+              </h5>
             </div>
             <div class="right3">
-              <img src="/Images/contact-phone.png" alt="">
+              <img src="/Images/contact-phone.png" alt="" />
               <h3>PHONE</h3>
               <h5>Mon-Fri from 8am to 5am</h5>
               <a href="">111-222(53)-786</a>
