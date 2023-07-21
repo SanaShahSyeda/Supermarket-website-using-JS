@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+var cart_value = 1;
+
 document
   .getElementById("c-plus")
   .addEventListener("click", add_chicken_quantity);
@@ -45,7 +48,7 @@ document
 function add_chicken_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-
+  cart_value+=1;
   var span = document.querySelector("#chicken .quantity");
   chicken_q = parseInt(span.textContent);
   span.textContent = chicken_q + 1;
@@ -58,6 +61,7 @@ function sub_chicken_quantity(event) {
   var span = document.querySelector("#chicken .quantity");
   chicken_q = parseInt(span.textContent);
   if (chicken_q > 1) {
+    cart_value=cart_value-1;
     span.textContent = chicken_q - 1;
   }
 }
@@ -65,7 +69,7 @@ function sub_chicken_quantity(event) {
 function add_beef_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-
+  cart_value+=1;
   var span = document.querySelector("#beef .quantity");
   var beef_q = parseInt(span.textContent);
   span.textContent = beef_q + 1;
@@ -77,13 +81,14 @@ function sub_beef_quantity(event) {
   var span = document.querySelector("#beef .quantity");
   var beef_q = parseInt(span.textContent);
   if (beef_q > 1) {
+    cart_value=cart_value-1;
     span.textContent = beef_q - 1;
   }
 }
 function add_mutton_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-
+  cart_value+=1;
   var span = document.querySelector("#mutton .quantity");
   var mutton_q = parseInt(span.textContent);
   span.textContent = mutton_q + 1;
@@ -95,32 +100,12 @@ function sub_mutton_quantity(event) {
   var span = document.querySelector("#mutton .quantity");
   var mutton_q = parseInt(span.textContent);
   if (mutton_q > 1) {
+    cart_value=cart_value-1;
     span.textContent = mutton_q - 1;
   }
 }
 
-var cart_value = 0;
-
-// When adding event listeners, you should pass the function reference, not its result.
-
-// document.getElementById("c-plus").addEventListener("click", createElement(event,"c-plus"));
-// document.getElementById("b-plus").addEventListener("click", createElement(event, "b-plus"));
-// document.getElementById("m-plus").addEventListener("click", createElement(event,"m-plus"));
-
-// correct way to pass a function reference instead to use it directly.
-// anonymous or arrow function both could be used to pass function reference for adding event listeners.
-
-document.getElementById("c-plus").addEventListener("click", function (event) {
-  createElement(event, "c-plus");
-});
-document.getElementById("b-plus").addEventListener("click", function (event) {
-  createElement(event, "b-plus");
-});
-document.getElementById("m-plus").addEventListener("click", function (event) {
-  createElement(event, "m-plus");
-});
-
-function createElement(event, id) {
+function addCart(event, id){
   event.preventDefault();
   var cart_status = document.querySelector("#cart .cart-status");
   if (cart_status) {
@@ -128,7 +113,6 @@ function createElement(event, id) {
     cart_status.textContent = cart_value;
   } else {
     var newElement = document.createElement("span");
-    cart_value = 1;
     newElement.textContent = cart_value;
     newElement.classList.add("cart-status");
     var container = document.getElementById("cart");
@@ -136,25 +120,5 @@ function createElement(event, id) {
   }
 }
 
-var cart_q=0;
-
-document.getElementById("c-minus").addEventListener("click", function (event) {
-  decreaseQuantity(event, "c-minus");
-});
-document.getElementById("b-minus").addEventListener("click", function (event) {
-  decreaseQuantity(event, "b-minus");
-});
-document.getElementById("m-minus").addEventListener("click", function (event) {
-  decreaseQuantity(event, "m-minus");
-});
-
-function decreaseQuantity(event, id){
-  event.preventDefault();
-  var cart_s= document.querySelector("#cart .cart-status");
-  if(cart_s){
-   cart_q= parseInt(cart_s.textContent)-1;
-   cart_s.textContent=cart_q;
-  }
-}
 
 // function addCartStatus() {}
