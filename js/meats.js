@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 var cart_value = 1;
 
 document
@@ -48,7 +47,7 @@ document
 function add_chicken_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-  cart_value+=1;
+  cart_value += 1;
   var span = document.querySelector("#chicken .quantity");
   chicken_q = parseInt(span.textContent);
   span.textContent = chicken_q + 1;
@@ -61,7 +60,7 @@ function sub_chicken_quantity(event) {
   var span = document.querySelector("#chicken .quantity");
   chicken_q = parseInt(span.textContent);
   if (chicken_q > 1) {
-    cart_value=cart_value-1;
+    cart_value = cart_value - 1;
     span.textContent = chicken_q - 1;
   }
 }
@@ -69,7 +68,7 @@ function sub_chicken_quantity(event) {
 function add_beef_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-  cart_value+=1;
+  cart_value += 1;
   var span = document.querySelector("#beef .quantity");
   var beef_q = parseInt(span.textContent);
   span.textContent = beef_q + 1;
@@ -81,14 +80,14 @@ function sub_beef_quantity(event) {
   var span = document.querySelector("#beef .quantity");
   var beef_q = parseInt(span.textContent);
   if (beef_q > 1) {
-    cart_value=cart_value-1;
+    cart_value = cart_value - 1;
     span.textContent = beef_q - 1;
   }
 }
 function add_mutton_quantity(event) {
   //prevents loading of page
   event.preventDefault();
-  cart_value+=1;
+  cart_value += 1;
   var span = document.querySelector("#mutton .quantity");
   var mutton_q = parseInt(span.textContent);
   span.textContent = mutton_q + 1;
@@ -100,12 +99,12 @@ function sub_mutton_quantity(event) {
   var span = document.querySelector("#mutton .quantity");
   var mutton_q = parseInt(span.textContent);
   if (mutton_q > 1) {
-    cart_value=cart_value-1;
+    cart_value = cart_value - 1;
     span.textContent = mutton_q - 1;
   }
 }
 
-function addCart(event, id){
+function addCart(event, id) {
   event.preventDefault();
   var cart_status = document.querySelector("#cart .cart-status");
   if (cart_status) {
@@ -119,6 +118,5 @@ function addCart(event, id){
     container.appendChild(newElement);
   }
 }
-
 
 // function addCartStatus() {}
