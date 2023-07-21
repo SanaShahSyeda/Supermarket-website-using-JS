@@ -476,8 +476,8 @@ svg {
 }
 
 .left-contact button:hover {
-  color: black;
-  background-color: var(--apple-greenlight);
+  color: white;
+  background-color: black;
 }
 
 .right-contact img {
