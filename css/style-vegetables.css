@@ -5,12 +5,12 @@
 
 :root{
     --leafy-green:rgb(71, 99, 52);
-    --poryphyrophilic: rgb(49, 27, 70);
+    --poryphyrophilic: rgb(132, 93, 167);
 }
 
 .home-bg {
-  width: 1534px;
-  height: 712px;
+  width: 1520px;
+  height: 700px;
   opacity: 0.9;
   background-size: cover;
   background-position: center;
@@ -59,8 +59,19 @@ nav ul a:hover{
 }
 
 .right-home p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 120px;
-    font-size: 20px;
     text-align: justify;
+}
+
+.show-vegetables{
+    width: 1520px;
+    height: 700px;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/Images/leafy-vegetable-bg.png");
 }
