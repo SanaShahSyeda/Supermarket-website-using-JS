@@ -11,16 +11,16 @@
 .home-bg {
   width: 1534px;
   height: 712px;
-  opacity: 0.8;
+  opacity: 0.9;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/Images/leafy-vegetable-bg.png");
+  background-image: url("/Images/leafy-vegetable-lettuce.png");
 }
 
 nav ul li{
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 100px;
     display: inline-block;
 }
 
@@ -45,4 +45,22 @@ nav ul a:hover{
     height: 60px;
     margin-top: -35px;
     margin-left: 1430px;
+}
+
+.right-home{
+    width: 850px;
+}
+
+.right-home h1{
+    margin-left: 120px;
+    margin-top: 160px;
+    text-transform: uppercase;
+    color: var(--poryphyrophilic);
+}
+
+.right-home p{
+    margin-top: 30px;
+    margin-left: 120px;
+    font-size: 20px;
+    text-align: justify;
 }

@@ -13,11 +13,11 @@
 .background {
   width: 1518px;
   height: 744px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/Images/fruits-bg1.png");
+  background-image: url("/Images/leafy-vegetable-lettuce.png");
 }
 
 .logo img {
