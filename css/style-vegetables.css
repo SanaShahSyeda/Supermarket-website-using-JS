@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home-bg {
+  width: 1535px;
+  height: 713px;
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/Images/leafy-vegetable-bg.png");
+}
