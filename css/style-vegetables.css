@@ -75,3 +75,16 @@ nav ul a:hover{
     background-repeat: no-repeat;
     background-image: url("/Images/leafy-vegetable-bg.png");
 }
+
+.show-vegetables > div{
+    width: 310px;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 140px;
+    display: inline-table;
+    background-color: aqua;
+}
+
+.show-vegetables div:nth-of-type(1){
+    margin-left: 130px;
+}
