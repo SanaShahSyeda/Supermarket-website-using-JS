@@ -3,9 +3,9 @@
   margin: 0;
 }
 
-:root{
-    --leafy-green:rgb(71, 99, 52);
-    --poryphyrophilic: rgb(132, 93, 167);
+:root {
+  --leafy-green: rgb(71, 99, 52);
+  --poryphyrophilic: rgb(132, 93, 167);
 }
 
 .home-bg {
@@ -18,73 +18,112 @@
   background-image: url("/Images/leafy-vegetable-lettuce.png");
 }
 
-nav ul li{
-    margin-top: 20px;
-    margin-left: 100px;
-    display: inline-block;
+nav ul li {
+  margin-top: 20px;
+  margin-left: 100px;
+  display: inline-block;
 }
 
-nav ul a{
-    font-style: bold;
-    font-size: 22px;
-    font-style:normal;
-    font-weight: 60px;
+nav ul a {
+  font-style: bold;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 60px;
+  color: var(--leafy-green);
+}
+
+nav ul a:hover {
+  color: var(--poryphyrophilic);
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-top: -35px;
+  margin-left: 1430px;
+}
+
+.right-home {
+  width: 850px;
+}
+
+.right-home h1 {
+  margin-left: 120px;
+  margin-top: 160px;
+  text-transform: uppercase;
+  color: var(--poryphyrophilic);
+}
+
+.right-home p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 120px;
+  text-align: justify;
+}
+
+.show-vegetables {
+  width: 1520px;
+  height: 700px;
+  opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/Images/leafy-vegetable-bg.png");
+}
+
+.show-vegetables > div {
+  width: 310px;
+  height: 430px;
+  margin-top: 140px;
+  margin-left: 10px;
+  display: inline-table;
+  background-color: rgb(200, 200, 200);
+}
+
+.show-vegetables div:nth-of-type(1) {
+  margin-left: 140px;
+}
+
+.show-vegetables div .logos img {
+  width: 110px;
+  height: 100px;
+  position: relative;
+  margin-left: -90px;
+}
+
+.show-vegetables div .logos img:nth-of-type(1) {
+  width: 50px;
+  height: 60px;
+}
+
+.show-vegetables a {
+  display: flex;  
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 90px;
+  font-weight: bolder; 
+  text-decoration: none;
+  color: var(--poryphyrophilic); 
+}
+
+.show-vegetables a:hover{
     color: var(--leafy-green);
 }
 
-nav ul a:hover{
-    color: var(--poryphyrophilic);
+.show-vegetables p {
+    color:rgb(69, 69, 69) ;
+  text-align: justify;
+  margin: 25px 25px 0 25px;
 }
 
-.logo{
-    width: 100px;
-}
-
-.logo img{
-    width: 60px;
-    height: 60px;
-    margin-top: -35px;
-    margin-left: 1430px;
-}
-
-.right-home{
-    width: 850px;
-}
-
-.right-home h1{
-    margin-left: 120px;
-    margin-top: 160px;
-    text-transform: uppercase;
-    color: var(--poryphyrophilic);
-}
-
-.right-home p{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 120px;
-    text-align: justify;
-}
-
-.show-vegetables{
-    width: 1520px;
-    height: 700px;
-    opacity: 0.9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/Images/leafy-vegetable-bg.png");
-}
-
-.show-vegetables > div{
-    width: 310px;
-    height: 400px;
-    margin-left: 10px;
-    margin-top: 140px;
-    display: inline-table;
-    background-color: aqua;
-}
-
-.show-vegetables div:nth-of-type(1){
-    margin-left: 130px;
+.show-vegetables .bottom-img img{
+    width: 140px;
+    height: 120px;
+    margin-left: -10px;
+    border-radius: 50%;
 }
