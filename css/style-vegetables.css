@@ -197,12 +197,13 @@ nav ul a:hover {
   margin-left: -120px;
 }
 
-.slide-content span {
+.slide-content span:nth-of-type(1){
   width: 100px;
   height: 30px;
   display: flex;
   margin-left: 200px;
   margin-top: -20px;
+  margin-bottom: 20px;
   font-size: 21px;
   border: 2px solid var(--leafy-green);
 }
@@ -231,25 +232,7 @@ nav ul a:hover {
   margin-right: 30px;
 }
 
-/* .arrow{
-  width: 48px;
-  height: 48px;
-  border-color: #000;
-  position: absolute;
-  top: 50%;
-  margin-top: -31px;
+.checked{
+  color: orange;
 }
 
-#arrow-left{
-  border-bottom: 6px solid;
-  border-left: 6px solid;
-  transform: rotate(45deg);
-  left: 30px;
-}
-   
-#arrow-right{
-  border-bottom: 6px solid;
-  border-left: 6px solid;
-  transform: rotate(-135deg);
-  right: 30px;
-} */
