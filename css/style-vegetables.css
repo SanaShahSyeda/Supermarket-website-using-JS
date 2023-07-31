@@ -165,10 +165,9 @@ nav ul a:hover {
 .slide1 .slide-content:nth-of-type(3),
 .slide1 .slide-content:nth-of-type(2),
 .slide2 .slide-content:nth-of-type(3),
-.slide2 .slide-content:nth-of-type(2){
+.slide2 .slide-content:nth-of-type(2) {
   margin-left: 30px;
 }
-
 
 .slide-content:hover {
   background-color: rgb(180, 171, 191);
@@ -182,6 +181,24 @@ nav ul a:hover {
   border-radius: 25px;
 }
 
+.slide-content .quantity {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-left: 220px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.slide-content > svg{
+  display: flex;
+  margin-left: 250px;
+}
+
+.slide-content svg:nth-of-type(1){
+  margin-top: -50px;
+}
 .slide h1 {
   color: var(--leafy-green);
   text-align: center;
@@ -195,17 +212,6 @@ nav ul a:hover {
 .slide h3 {
   margin-top: 35px;
   margin-left: -120px;
-}
-
-.slide-content span:nth-of-type(1){
-  width: 100px;
-  height: 30px;
-  display: flex;
-  margin-left: 200px;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  font-size: 21px;
-  border: 2px solid var(--leafy-green);
 }
 
 .arrow {
@@ -232,7 +238,6 @@ nav ul a:hover {
   margin-right: 30px;
 }
 
-.checked{
+.checked {
   color: orange;
 }
-
