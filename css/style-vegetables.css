@@ -136,7 +136,6 @@ nav ul a:hover {
 
 .buy-vegetables {
   height: 700px;
-  margin-top: 20px;
   background-color: rgb(242, 242, 242);
 }
 
@@ -251,4 +250,57 @@ nav ul a:hover {
 
 .checked {
   color: orange;
+}
+
+.contact{
+  height: 690px;
+  background-color:  rgb(242, 242, 242);
+}
+.contact h1, .contact h4{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact h4{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: rgb(85, 85, 85);
+}
+
+.contact img{
+  width: 70px;
+  height: 60px;
+}
+
+.contact > div{
+  width: 600px;
+  height: 120px;
+  margin-top: 30px;
+  margin-left: 500px;
+  background-color: rgb(216, 216, 216);
+}
+
+.contact > div h2{
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+.contact > div h5{
+  color: rgb(132, 133, 133);
+  margin-top: 5px;
+  margin-left: 100px;
+}
+
+.contact button{
+  display: grid;
+  width: 160px;
+  height: 35px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 420px;
+  margin-top: -30px;
+  text-transform: uppercase;
+  background-color: var(--poryphyrophilic);
 }
