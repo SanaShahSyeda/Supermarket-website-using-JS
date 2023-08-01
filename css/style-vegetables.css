@@ -67,6 +67,25 @@ nav ul a:hover {
   text-align: justify;
 }
 
+.right-home button{
+  width: 200px;
+  height: 35px;
+  border: none;
+  color: black;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 120px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color:rgb(132, 175, 132);
+}
+
+.right-home button:hover{
+  color: white;
+  cursor: pointer;
+  background-color: var(--poryphyrophilic);
+}
+
 .show-vegetables {
   width: 1520px;
   height: 700px;
