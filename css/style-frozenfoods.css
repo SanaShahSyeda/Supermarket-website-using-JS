@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root{
+    --greenhover: rgb(10, 219, 97);
+}
+
 .home-bg-img{
     width: 1545px;
     height: 710px;
@@ -30,6 +34,18 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: brown;
+    color: var(--greenhover);
     text-decoration: underline;
+}
+
+.logo img{
+    width: 80px;
+    display: flex;
+    margin-top: -40px;
+    margin-left: 1400px;
+}
+
+.logo img:hover{
+    border-radius: 50%;
+    background-color: var(--greenhover);
 }
