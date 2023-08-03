@@ -128,7 +128,6 @@ nav ul li a:hover {
 
 .buy-categories {
   height: 710px;
-  background-color: aliceblue;
 }
 
 .buy-categories h1 {
@@ -142,39 +141,48 @@ nav ul li a:hover {
 .buy-categories > div {
   width: 400px;
   height: 470px;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: 120px;
   border-radius: 35px;
   display: inline-flex;
   background-color: rgb(217, 230, 218);
 }
 
-.buy-categories > div:hover{
+.buy-categories > div:hover {
   cursor: pointer;
   background-color: rgb(196, 225, 199);
 }
 
+.buy-categories .frozen-snacks,
+.buy-categories .frozen-fruits {
+  display: none;
+}
+
 .buy-categories .frozen-deserts,
-.buy-categories .frozen-seafood{
-    margin-left: 50px;
+.buy-categories .frozen-seafood {
+  margin-left: 50px;
 }
 
-.buy-categories img{
-    width: 300px;
-    height: 270px;
-    margin-top: 20px;
-    margin-left: 50px;
-    border-radius: 35px;
+.buy-categories > div h2 {
+  text-align: center;
 }
 
-.buy-categories > div h4{
+.buy-categories img {
+  width: 300px;
+  height: 270px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border-radius: 35px;
+}
+
+.buy-categories > div h4 {
   color: rgb(78, 78, 78);
   font-size: 20px;
   margin-top: 325px;
   margin-left: -250px;
 }
 
-.buy-categories .quantity{
+.buy-categories .quantity {
   width: 110px;
   height: 40px;
   margin-top: 320px;
@@ -183,28 +191,28 @@ nav ul li a:hover {
   border: 2px solid black;
 }
 
-.buy-categories .quantity span{
+.buy-categories .quantity span {
   display: flex;
   font-size: x-large;
   margin-top: 1px;
   margin-left: 30px;
 }
 
-.quantity > svg{
+.quantity > svg {
   display: flex;
   margin-top: -25px;
   margin-left: 70px;
 }
 
-.quantity svg:nth-of-type(2){
+.quantity svg:nth-of-type(2) {
   margin-top: 2px;
 }
 
-.quantity svg:hover{
+.quantity svg:hover {
   cursor: pointer;
 }
 
-.buy-categories > div  button{
+.buy-categories > div button {
   border: none;
   width: 120px;
   height: 40px;
@@ -212,24 +220,31 @@ nav ul li a:hover {
   margin-top: 390px;
   border-radius: 35px;
 }
- .btn-buy{
+.btn-buy {
   color: black;
   margin-left: -270px;
   background-color: rgb(30, 150, 110);
 }
 
-.btn-cart{
+.btn-cart {
   color: white;
   margin-left: 20px;
   background-color: black;
 }
 
-.btn-buy:hover{
+.btn-buy:hover {
   color: white;
   background-color: var(--greenhover);
 }
 
-.btn-cart:hover{
+.btn-cart:hover {
   color: black;
   background-color: rgb(139, 138, 138);
+}
+
+.buy-categories input {
+  width: 300px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: 640px;
 }
