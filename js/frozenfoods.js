@@ -23,3 +23,14 @@ slider.oninput = function () {
     div5.style.display ="none";
   }
 };
+
+function submitForm(event, id){
+  event.preventDefault();
+  alert("form submitted succesfully !!");
+  var name= document.getElementById("name");
+  var email=document.getElementById("email");
+  var freetext=document.getElementById("freetext");
+  name.value="";
+  email.value="";
+  freetext.value="";
+}
