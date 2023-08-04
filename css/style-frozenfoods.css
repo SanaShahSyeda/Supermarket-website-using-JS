@@ -176,11 +176,20 @@ nav ul li a:hover {
   border-radius: 35px;
 }
 
-.buy-categories > div h4 {
+.buy-categories > div h4,
+.buy-categories > div h3 {
   color: rgb(78, 78, 78);
   font-size: 20px;
+}
+
+.buy-categories > div h3 {
   margin-top: 325px;
   margin-left: -250px;
+}
+
+.buy-categories > div h4 {
+  margin-top: 325px;
+  margin-left: 10px;
 }
 
 .buy-categories .quantity {
@@ -250,12 +259,15 @@ nav ul li a:hover {
   margin-left: 640px;
 }
 
-.contact-categorie{
+.contact-categorie {
   height: 700px;
   background-color: rgb(255, 255, 255);
 }
 
-.office, .phone, .fax, .email{
+.office,
+.phone,
+.fax,
+.email {
   width: 200px;
   height: 170px;
   margin-top: 30px;
@@ -264,18 +276,20 @@ nav ul li a:hover {
   background-color: rgb(237, 237, 237);
 }
 
-.phone, .fax, .email{
+.phone,
+.fax,
+.email {
   margin-left: 20px;
 }
 
-.contact-categorie img{
+.contact-categorie img {
   width: 60px;
   height: 50px;
   margin-top: 10px;
   margin-left: 70px;
 }
 
-.contact-categorie h2{
+.contact-categorie h2 {
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -283,19 +297,19 @@ nav ul li a:hover {
   text-transform: uppercase;
 }
 
-.contact-categorie  a{
+.contact-categorie a {
   margin-top: 20px;
   margin-left: 40px;
   color: rgb(113, 113, 113);
   text-decoration: none;
 }
 
-.contact-categorie a:hover{
+.contact-categorie a:hover {
   color: var(--greenhover);
   text-decoration: underline;
 }
 
-.contact-us{
+.contact-us {
   width: 500px;
   height: 440px;
   margin-top: 30px;
@@ -304,31 +318,31 @@ nav ul li a:hover {
   background-color: rgb(220, 245, 223);
 }
 
-.contact-us h1{
+.contact-us h1 {
   text-align: center;
 }
 
-.contact-us form input{
+.contact-us form input {
   border: none;
   height: 25px;
-  width: 320px; 
+  width: 320px;
   display: flex;
   margin-top: 30px;
   margin-left: 80px;
   border-radius: 20px;
 }
 
-input:focus{
+input:focus {
   background-color: rgb(220, 219, 219);
 }
 
-#free-text{
+#free-text {
   width: 330px;
   height: 130px;
-  border-radius:0;
+  border-radius: 0;
 }
 
-form button{
+form button {
   width: 100px;
   height: 30px;
   border: none;
@@ -340,7 +354,7 @@ form button{
   background-color: rgb(30, 150, 110);
 }
 
-form button:hover{
+form button:hover {
   color: white;
   background-color: black;
 }
