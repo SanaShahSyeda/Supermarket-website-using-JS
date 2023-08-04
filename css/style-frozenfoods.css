@@ -358,3 +358,17 @@ form button:hover {
   color: white;
   background-color: black;
 }
+
+/* styling to the element created through javascript */
+
+#cart span{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  color: white;
+  margin-top: -65px;
+  border-radius: 50%;
+  margin-left: 1460px;
+  margin-bottom: 110px;
+  background-color:var(--greenhover);
+}

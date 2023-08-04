@@ -28,8 +28,8 @@
             <li><a href="breadbakery.html">Bread % Bakery</a></li>
           </ul>
         </nav>
-        <div class="logo">
-          <a href=""><img src="/Images/cart.png" alt="" /></a>
+        <div class="logo" id="logo">
+          <a id="cart" href=""><img src="/Images/cart.png" alt="" /></a>
         </div>
         <div class="home-description">
           <h1>Frozen Foods</h1>
@@ -138,7 +138,7 @@
             </svg>
           </div>
           <button class="btn-buy">Buy Now</button>
-          <button class="btn-cart">Add to cart</button>
+          <button id="addCart" onclick="addCart(event,'frozen-vegetables')" class="btn-cart">Add to cart</button>
         </div>
         <div class="frozen-deserts" id="frozen-deserts">
           <img src="/Images/frozenfood-deserts.png" alt="" />
@@ -165,7 +165,7 @@
             </svg>
           </div>
           <button class="btn-buy">Buy Now</button>
-          <button class="btn-cart">Add to cart</button>
+          <button id="addCart" onclick="addCart(event,'frozen-deserts')" class="btn-cart">Add to cart</button>
         </div>
         <div class="frozen-seafood" id="frozen-seafood">
           <img src="/Images/frozenfood-fish.png" alt="" />
@@ -192,7 +192,7 @@
             </svg>
           </div>
           <button class="btn-buy">Buy Now</button>
-          <button class="btn-cart">Add to cart</button>
+          <button id="addCart" onclick="addCart(event,'frozen-seafood')" class="btn-cart">Add to cart</button>
         </div>
         <div class="frozen-snacks" id="frozen-snacks">
           <img src="/Images/frozenfood-snacks.png" alt="" />
@@ -219,7 +219,7 @@
             </svg>
           </div>
           <button class="btn-buy">Buy Now</button>
-          <button class="btn-cart">Add to cart</button>
+          <button id="addCart" onclick="addCart(event,'frozen-snacks')"  class="btn-cart">Add to cart</button>
         </div>
         <div class="frozen-fruits" id="frozen-fruits">
           <img src="/Images/frozenfood-fruits.png" alt="" />
@@ -246,7 +246,7 @@
             </svg>
           </div>
           <button class="btn-buy">Buy Now</button>
-          <button class="btn-cart">Add to cart</button>
+          <button id="addCart" onclick="addCart(event,'frozen-fruits')"  class="btn-cart">Add to cart</button>
         </div>
           <input type="range" min="1" max="100" value="50" id="myrange">
       </div>
