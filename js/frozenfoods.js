@@ -103,3 +103,108 @@ document
       price.textContent= v_p/2;
     }
   }
+
+  function add_desert_quantity(event){
+    event.preventDefault();
+    // cart_value += 1;
+    const div = document.getElementById("frozen-deserts");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    d_p = parseFloat(price.textContent);
+    d_q = parseInt(span.textContent);
+    span.textContent = d_q + 1;
+    price.textContent= d_p*2;
+  }
+
+  function sub_desert_quantity(event){
+    event.preventDefault();
+    const div = document.getElementById("frozen-deserts");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    d_p = parseFloat(price.textContent);
+    d_q = parseInt(span.textContent);
+    if (d_q > 1) {
+      // cart_value = cart_value - 1;
+      span.textContent = d_q - 1;
+      price.textContent= d_p/2;
+    }
+  }
+
+  function add_seafood_quantity(event){
+    event.preventDefault();
+    // cart_value += 1;
+    const div = document.getElementById("frozen-seafood");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    s_p = parseFloat(price.textContent);
+    s_q = parseInt(span.textContent);
+    span.textContent = s_q + 1;
+    price.textContent= s_p*2;
+  }
+
+  function sub_seafood_quantity(event){
+    event.preventDefault();
+    const div = document.getElementById("frozen-seafood");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    s_p = parseFloat(price.textContent);
+    s_q = parseInt(span.textContent);
+    if (s_q > 1) {
+      // cart_value = cart_value - 1;
+      span.textContent = s_q - 1;
+      price.textContent=s_p/2;
+    }
+  }
+
+  function add_snacks_quantity(event){
+    event.preventDefault();
+    // cart_value += 1;
+    const div = document.getElementById("frozen-snacks");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    sn_p = parseFloat(price.textContent);
+    sn_q = parseInt(span.textContent);
+    span.textContent = sn_q + 1;
+    price.textContent= sn_p*2;
+  }
+
+  function sub_snacks_quantity(event){
+    event.preventDefault();
+    const div = document.getElementById("frozen-snacks");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    sn_p = parseFloat(price.textContent);
+    sn_q = parseInt(span.textContent);
+    if (sn_q > 1) {
+      // cart_value = cart_value - 1;
+      span.textContent = sn_q - 1;
+      price.textContent= sn_p/2;
+    }
+  }
+
+  function add_fruits_quantity(event){
+    event.preventDefault();
+    // cart_value += 1;
+    const div = document.getElementById("frozen-fruits");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    f_p = parseFloat(price.textContent);
+    f_q = parseInt(span.textContent);
+    span.textContent = f_q + 1;
+    price.textContent= f_p*2;
+  }
+
+  function sub_fruits_quantity(event){
+    event.preventDefault();
+    const div = document.getElementById("frozen-fruits");
+    const price= div.querySelector("h4");
+    const span = div.querySelector("span");
+    f_p = parseFloat(price.textContent);
+    f_q = parseInt(span.textContent);
+    if (f_q > 1) {
+      // cart_value = cart_value - 1;
+      span.textContent = f_q - 1;
+      price.textContent= f_p/2;
+    }
+  }
+
