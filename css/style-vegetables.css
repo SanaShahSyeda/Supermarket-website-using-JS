@@ -235,13 +235,45 @@ nav ul a:hover {
 }
 
 .slide h2 {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .slide h3 {
-  margin-top: 35px;
+  margin-top: 25px;
   margin-left: -120px;
 }
+
+.slide > div  button{
+  border: none;
+  display:flex;
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 70px;
+  border-radius: 20px;
+}
+
+.slide .btn-cart{
+  color: white;
+  margin-left: 200px;
+  margin-top: -25px;
+  background-color: var(--leafy-green);
+}
+
+.btn-cart:hover{
+  background-color: black;
+}
+
+.slide .btn-buy{
+  color: black;
+  background-color:rgb(140, 98, 98);
+}
+
+.btn-buy:hover{
+  background-color: rgb(208, 208, 208);
+}
+
 
 .arrow {
   width: 0;

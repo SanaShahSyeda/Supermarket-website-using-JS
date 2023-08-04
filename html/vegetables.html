@@ -26,7 +26,7 @@
             <li><a href="">Fruit-Vegetables</a></li>
           </ul>
           <div class="logo">
-            <img src="/Images/cart-purple.png" alt="" />
+            <a id="cart" href=""><img src="/Images/cart-purple.png" alt="" /></a>
           </div>
         </nav>
         <div class="right-home">
@@ -127,7 +127,7 @@
           <div id="slider">
             <div class="slide slide1">
               <h1><br>Root Vegetables</h1>
-              <div class="slide-content">
+              <div class="slide-content" id="carrot">
                 <h2>Carrots</h2>
                 <img src="/Images/root-vegetable-carrot.png" alt="" />
                 <h3>Quantity</h3>
@@ -136,9 +136,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="c-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -146,9 +145,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="c-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -157,8 +155,10 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'carrot')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="potato">
                 <h2>Potatoes</h2>
                 <img src="/Images/root-vegetables-potatoes.png" alt="" />
                 <h3>Quantity</h3>
@@ -167,9 +167,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="p-plus"
+                > <path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -177,9 +176,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="p-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -188,8 +186,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'potato')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="turnip">
                 <h2>Turnips</h2>
                 <img src="/Images/root-vegetables-turnips.png" alt="" />
                 <h3>Quantity</h3>
@@ -198,9 +198,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="t-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -208,9 +207,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="t-minus"
+                > <path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -219,11 +217,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'turnip')">Add to cart</button>
               </div>
             </div>
             <div class="slide slide2">
               <h1><br>Root Vegetables</h1>
-              <div class="slide-content">
+              <div class="slide-content" id="beet">
                 <h2>Beets</h2>
                 <img src="/Images/root-vegetables-beets.png" alt="" />
                 <h3>Quantity</h3>
@@ -232,9 +232,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="b-plus"
+                > <path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -242,9 +241,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="b-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -253,8 +251,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'beet')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="yam">
                 <h2>Yams</h2>
                 <img src="/Images/root-vegetables-yams.png" alt="" />
                 <h3>Quantity</h3>
@@ -263,9 +263,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="y-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -273,9 +272,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="y-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -284,8 +282,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'yam')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="raddish">
                 <h2>Raddishes</h2>
                 <img src="/Images/root-vegetables-radishes.png" alt="" />
                 <h3>Quantity</h3>
@@ -294,9 +294,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="r-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -304,9 +303,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="r-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -315,11 +313,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'raddish')">Add to cart</button>
               </div>
             </div>
             <div class="slide slide3">
               <h1><br>Leafy Greens</h1>
-              <div class="slide-content">
+              <div class="slide-content" id="kale">
                 <h2>Kale</h2>
                 <img src="/Images/leafy-greens-kale.png" alt="" />
                 <h3>Quantity</h3>
@@ -328,9 +328,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="k-plus"
+                > <path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -338,9 +337,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="k-minus"
+                > <path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -349,8 +347,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'kale')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="lettuce">
                 <h2>Lettuce</h2>
                 <img src="/Images/leafy-greens-lettuce.png" alt="" />
                 <h3>Quantity</h3>
@@ -359,9 +359,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="le-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -369,9 +368,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="le-minus"
+                > <path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -380,8 +378,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'lettuce')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="spinach">
                 <h2>Spinach</h2>
                 <img src="/Images/leafy-greens-spinach.png" alt="" />
                 <h3>Quantity</h3>
@@ -390,9 +390,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="s-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -400,9 +399,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="s-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -411,11 +409,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'spinach')">Add to cart</button>
               </div>
             </div>
             <div class="slide slide4">
               <h1><br>Stem and Shoot</h1>
-              <div class="slide-content">
+              <div class="slide-content" id="celery">
                 <h2>Celery</h2>
                 <img src="/Images/stem-shoot-celery.png" alt="" />
                 <h3>Quantity</h3>
@@ -424,9 +424,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="ce-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -434,9 +433,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="ce-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -445,8 +443,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'celery')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="asparagus">
                 <h2>Asparagus</h2>
                 <img src="/Images/stem-shoot-asparagus.png" alt="" />
                 <h3>Quantity</h3>
@@ -455,9 +455,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="a-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -465,9 +464,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="a-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -476,8 +474,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'asparagus')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="brocolli">
                 <h2>Brocolli</h2>
                 <img src="/Images/stem-shoot-brocolli.png" alt="" />
                 <h3>Quantity</h3>
@@ -486,9 +486,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="br-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -496,9 +495,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="br-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -507,11 +505,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'brocolli')">Add to cart</button>
               </div>
             </div>
             <div class="slide slide5">
               <h1><br>Fruit vegetables</h1>
-              <div class="slide-content">
+              <div class="slide-content" id="tomato">
                 <h2>Tomatoes</h2>
                 <img src="/Images/fruit-vegetables-tomatoes.png" alt="" />
                 <h3>Quantity</h3>
@@ -520,9 +520,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="to-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -530,9 +529,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="to-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -541,8 +539,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'tomsto')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="cucumbur">
                 <h2>Cucumbur</h2>
                 <img src="/Images/fruit-vegetables-cucumbur.png" alt="" />
                 <h3>Quantity</h3>
@@ -551,9 +551,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="cu-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -561,9 +560,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="cu-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -572,8 +570,10 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'cucumbur')">Add to cart</button>
               </div>
-              <div class="slide-content">
+              <div class="slide-content" id="eggplant">
                 <h2>Eggplant</h2>
                 <img src="/Images/fruit-vegetables-eggplant.png" alt="" />
                 <h3>Quantity</h3>
@@ -582,9 +582,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="e-plus"
+                ><path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"
                   />
                 </svg>
@@ -592,9 +591,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 448 512"
-                >
-                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
+                  id="e-minus"
+                ><path
                     d="M448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM92.5 220.5l123 123c4.7 4.7 12.3 4.7 17 0l123-123c7.6-7.6 2.2-20.5-8.5-20.5H101c-10.7 0-16.1 12.9-8.5 20.5z"
                   />
                 </svg>
@@ -603,6 +601,8 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
+                <button class="btn-buy" >Buy Now</button>
+                <button class="btn-cart" onclick="addCart(event,'eggplant')">Add to cart</button>
               </div>
             </div>
           </div>
