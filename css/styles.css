@@ -24,19 +24,6 @@ a {
   background-color: var(--secondarybg);
 }
 
-/* .home .search-icon{
-  margin-top: -28px;
-}
-
-.home .search-icon input{
-  margin-left: 1200px;
-  margin-top: -20px;
-}
-
-.search-icon img{
-  margin-left: 20px;
-} */
-
 .home img{
     width: 20px;
     margin-top: 40px;
@@ -72,6 +59,7 @@ nav ul li a:hover {
 
 .home-img img {
   width: 750px;
+  height: 550px;
   display: flex;
   margin-top: 90px;
   margin-left: 380px;
@@ -118,57 +106,64 @@ nav ul li a:hover {
 }
 
 .categories img {
-  width: 190px;
-  height: 150px;
+  width: 240px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 30px;
   border-radius: 25px;
 }
 
 .fruits,
 .Frozen-Foods,
-.Bread-Bakery,
 .Meat,
-.Drinks,
-.Cereals,
-.vegetables,
-.dairy {
-  margin-top: 70px;
+.vegetables {
+  width: 300px;
+  height: 450px;
+  margin-top: 90px;
   margin-left: 50px;
   display: inline-block;
+  border-radius: 25px;
+  background-color:var(--go-green);
 }
 
-.Meat,
-.Cereals {
-  margin-left: 300px;
+.fruits:hover,
+.Frozen-Foods:hover,
+.Meat:hover,
+.vegetables:hover {
+ cursor: pointer;
+ background-color: rgb(194, 218, 194);
+}  
+
+.Meat{
+  margin-left: 90px;
 }
 
 .heading-categories h1 {
-  margin-top: 170px;
+  margin-top: 190px;
   text-align: center;
   color: var(--brownbeauty);
 }
 
 .categories h4 {
+  margin-top: 10px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .categories button {
-  width: 100px;
+  color: white;
+  width: 150px;
   height: 30px;
   border: none;
   font-size: 14px;
-  margin-left: 50px;
+  margin-left: 80px;
   border-radius: 24px;
   margin-bottom: 10px;
-  color: var(--ligtblack);
-  background-color: var(--go-green);
+  background-color: black;
 }
 
 .categories button:hover {
-  color:var(--brownbeauty);
-  background-color: rgb(188, 213, 194);
-}
-
-@media only screen and (max-width: 600px){
-  
+  color:black;
+  background-color:rgb(169, 83, 83);
 }
