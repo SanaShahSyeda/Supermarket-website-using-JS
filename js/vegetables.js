@@ -49,22 +49,7 @@ arrowRight.addEventListener("click", function () {
 startSlide();
 
 var cart_value = 1;
-var c_q = 0;
-var p_q = 0;
-var l_q = 0;
-var to_q = 0;
-var b_q = 0;
-var br_q = 0;
-var a_q = 0;
-var cu_q = 0;
-var s_q = 0;
-var r_q = 0;
-var k_q = 0;
-var le_q = 0;
-var e_q = 0;
-var y_q = 0;
-var ce_q = 0;
-var t_q = 0;
+var c_q = 0, p_q , to_q , b_q , br_q , a_q , cu_q = 0, s_q = 0, r_q = 0, k_q = 0, le_q = 0, e_q = 0, y_q = 0, ce_q = 0, t_q = 0;
 
 document
   .getElementById("c-plus")
