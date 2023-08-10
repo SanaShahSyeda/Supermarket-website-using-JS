@@ -35,17 +35,17 @@ function submitForm(event, id) {
 }
 
 var cart_value = 1;
-var v_q = 0;
-var d_q = 0;
-var s_q = 0;
-var sn_q = 0;
-var f_q = 0;
-var v_p = 0;
-var v_p = 0;
-var d_p = 0;
-var s_p = 0;
-var sn_p = 0;
-var f_p = 0;
+var v_q = 0,
+  d_q = 0,
+  s_q = 0,
+  sn_q = 0,
+  f_q = 0,
+  v_p = 0,
+  v_p = 0,
+  d_p = 0,
+  s_p = 0,
+  sn_p = 0,
+  f_p = 0;
 
 document
   .getElementById("v-plus")
