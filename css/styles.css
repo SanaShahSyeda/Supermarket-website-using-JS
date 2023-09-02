@@ -106,10 +106,10 @@ nav ul li a:hover {
 }
 
 .categories img {
-  width: 240px;
-  height: 300px;
+  width: 200px;
+  height: 230px;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 50px;
   border-radius: 25px;
 }
 
@@ -118,8 +118,8 @@ nav ul li a:hover {
 .Meat,
 .vegetables {
   width: 300px;
-  height: 450px;
-  margin-top: 90px;
+  height: 340px;
+  margin-top: 60px;
   margin-left: 50px;
   display: inline-block;
   border-radius: 25px;
@@ -157,6 +157,7 @@ nav ul li a:hover {
   height: 30px;
   border: none;
   font-size: 14px;
+  margin-top: -20px;
   margin-left: 80px;
   border-radius: 24px;
   margin-bottom: 10px;
